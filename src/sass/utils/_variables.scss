@@ -1,0 +1,39 @@
+// білий
+$primary-color: #fcfcfc;
+// чорний
+$secondary: #131313;
+// жовтий
+$accent-color: #f8d24e;
+
+// Адреса
+$color-address: #d6936d;
+// сірий
+$light-secondary-color: #ababab;
+
+// breakpoints
+$breakpoints: (
+  'mobile': 480px,
+  'tablet': 768px,
+  'desktop': 1200px,
+);
+
+@function getPoint($key) {
+  @return map-get($breakpoints, $key);
+}
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: calc($width - 0.02px);
+    }
+    @media screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+  // If the key doesn't exist in the map
+  @else {
+    @warn "На жаль, не вдалося отримати значення  #{$width}. " 
+          + "Доступні значення: #{map-keys($breakpoints)}.";
+  }
+}

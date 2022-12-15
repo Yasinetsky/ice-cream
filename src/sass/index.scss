@@ -1,2 +1,19 @@
 @import './common';
-@import './example';
+// @import './example';
+
+// utils
+@import './utils/global';
+@import './utils/variables';
+
+// components
+@import './components/header';
+@import './components/hero';
+@import './components/products';
+@import './components/about';
+@import './components/advantages';
+@import './components/gallery';
+@import './components/reviews';
+@import './components/contacts';
+@import './components/footer';
+@import './components/modal';
+@import './components/button';
