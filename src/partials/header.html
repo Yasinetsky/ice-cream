@@ -1,5 +1,5 @@
 <header class="header">
-    <div class="container">
+    <div class="header_container container">
         <logo class="header-logo">
       <img class="header_img" src="./images/header/logo-mobi.png" alt="логотип морозиво"></logo>
      <nav class="header_nav">
@@ -18,8 +18,7 @@
         <button
         class="menu-toggle js-open-menu"
         aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
+        aria-controls="mobile-menu">
         <svg
           width="32"
           height="32"
@@ -31,20 +30,22 @@
          </use>
         </svg>
       </button>
-
     </div>
+    
     <div  class ="menu-container js-menu-container" id ="mobile-menu">
+      <logo class="header-logo">
+        <img class="header_img" src="./images/header/logo-mobi.png" alt="логотип морозиво"></logo>
       <button  class ="menu-toggle js-close-menu">
-        <svg width="32" висота="24">
+        <svg width="32" height="32">
           <use href="./images/icon-project.svg#close"></use>
         </svg>
       </button>
 
-      <ul  class ="mobile-menu">
-        <li><a  href ="" class ="link"> Про </a> </li>
-        <li><a  href ="" class ="link"> Продукти </a> </li>
-        <li><a  href ="" class ="link"> Контакти </a> </li>
-        <li><a  href ="" class ="link"> Кар'єра </a> </li>
+      <ul class ="mobile-menu">
+        <li class="header_item"><a class="list" href="#">Home</a></li>
+        <li class="header_item"><a class="list" href="#">How it’s made?</a></li>
+        <li class="header_item"><a class="list" href="#">Our products</a></li>
+        <li class="header_item"><a class="list" href="#">Contact</a></li>
       </ul>
       <button type="button" class="menu_button">Buy now<svg width="12" height="12"><use href="./images/icon-project.svg#icon-arrow-btn"></use>
       </svg></button>
