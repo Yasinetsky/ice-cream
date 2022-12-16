@@ -106,7 +106,7 @@
   height: 34px;
 
   border-radius: 50%;
-  // color: $primary-bgc;
+  color: $primary-bgc;
   background-color: $accent-color;
 
   &:hover, &:focus {
@@ -114,9 +114,9 @@
   }
 }
 
-// .footer-socials__icon {
-//   fill: currentColor;
-// }
+.footer-socials__icon {
+  fill: currentColor;
+}
 
 .footer__text {
   font-weight: 700;
