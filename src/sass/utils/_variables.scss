@@ -4,13 +4,18 @@ $primary-color: #fcfcfc;
 $secondary: #131313;
 // жовтий
 $accent-color: #f8d24e;
+// основний фон
+$primary-bgc: #84A178;
+
+// ховер, фокус
+$hov-foc: #0A8817;
 
 // Адреса
 $color-address: #d6936d;
 // сірий
 $light-secondary-color: #ababab;
 
-// breakpoints
+// місця перелому
 $breakpoints: (
   'mobile': 480px,
   'tablet': 768px,
