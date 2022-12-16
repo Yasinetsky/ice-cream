@@ -1,0 +1,71 @@
+<header class="header">
+    <div class="header_container container">
+        <logo class="header-logo">
+      <img class="header_img" 
+      srcset="./images/header/logo_40.png 40w, ./images/header/logo_48.png 48w, ./images/header/logo_60.png 60w, 
+      ./images/header/logo_80.png 80w, ./images/header/logo_96.png 96w, ./images/header/logo_120.png 120w" 
+      src="./images/header/logo_40.png" sizes="(min-width:1200px) 60px, (min-width:768px) 48px, (max-width:767px) 40px, 100vw" alt="логотип морозиво"></logo>
+     <nav class="header_nav">
+        <ul class="header_set">
+            <li class="header_item"><a class="list" href="./partials/hero.html">Home</a></li>
+            <li class="header_item"><a class="list" href="./partials/about.html">How it’s made?</a></li>
+            <li class="header_item"><a class="list" href="./partials/products.html">Our products</a></li>
+            <li class="header_item"><a class="list" href="./partials/contacts.html">Contact</a></li>
+        </ul>
+     </nav>
+       
+        
+        <button
+        class="menu-toggle-first js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+        <svg
+          width="32"
+          height="32"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+         <use href="./images/icon-project.svg#menu">
+         </use>
+        </svg>
+      </button>
+
+      <button type="button" class="header_button">Buy now<svg class="button_svg" width="12" height="12">
+        <use href="./images/icon-project.svg#icon-arrow-btn"></use>
+    </svg>
+    </button>
+    </div>
+    
+    <div  class ="menu-container js-menu-container" id ="mobile-menu">
+      <logo class="header-logo">
+        <img class="header_img" 
+      srcset="./images/header/logo_40.png 40w, ./images/header/logo_48.png 48w, ./images/header/logo_60.png 60w, 
+      ./images/header/logo_80.png 80w, ./images/header/logo_96.png 96w, ./images/header/logo_120.png 120w" 
+      src="./images/header/logo_40.png" sizes="(min-width:1200px) 60px, (min-width:768px) 48px, (max-width:767px) 40px, 100vw" alt="логотип морозиво"></logo>
+      <button  class ="menu-toggle js-close-menu">
+        <svg width="32" height="32">
+          <use href="./images/icon-project.svg#close"></use>
+        </svg>
+      </button>
+      <div class="mobi">
+        <ul class ="mobile-menu">
+        <li class="header_item"><a class="mobi_list" href="./partials/hero.html">Home</a></li>
+            <li class="header_item"><a class="mobi_list" href="./partials/about.html">How it’s made?</a></li>
+            <li class="header_item"><a class="mobi_list" href="./partials/products.html">Our products</a></li>
+            <li class="header_item"><a class="mobi_list" href="./partials/contacts.html">Contact</a></li>
+      </ul>
+      <button type="button" class="menu_button">Buy now<svg class="menu_btn_svg" width="12" height="12"><use href="./images/icon-project.svg#icon-arrow-btn"></use>
+      </svg></button>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../mobile-menu.js"></script>
+    
+</header>
