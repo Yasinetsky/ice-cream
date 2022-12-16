@@ -1,0 +1,121 @@
+.products {
+}
+.products__container {
+}
+.container {
+}
+.products__title {
+}
+.products__list {
+}
+.products__item {
+  position: relative;
+  width: 280px;
+  height: 420px;
+  padding: 123px 40px 16px 40px;
+
+  background-color: #aec6a5;
+  border-radius: 24px;
+
+  margin-top: 200px;
+
+  &:not(:last-child) {
+    margin-bottom: 168px;
+  }
+
+  &:nth-child(2) {
+    background-color: #efd478;
+  }
+  &:last-child {
+    background-color: #d6936d;
+  }
+}
+
+.product__shadow {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -11px;
+    left: 0;
+
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-size: cover;
+  }
+
+  &--green {
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+    &::before {
+      background-image: url(../images/products/img_1.jpg);
+    }
+  }
+
+  &--yellow {
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+
+    &::before {
+      background-image: url(../images/products/img_2.jpg);
+    }
+  }
+
+  &--coral {
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+
+    &::before {
+      background-image: url(../images/products/img_3.jpg);
+    }
+  }
+}
+.products__subtitle {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #131313;
+}
+.products__description {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+  /* or 25px */
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #131313;
+}
