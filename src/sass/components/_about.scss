@@ -1,12 +1,14 @@
 .about {
   background-color: #84a178;
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .about__text {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   line-height: calc(22 / 18);
+  margin-bottom: 12px;
 
   text-align: center;
   letter-spacing: 0.04em;
@@ -27,15 +29,86 @@
 }
 
 .about__titel {
+  width: 200px;
+  margin: 0 auto;
   font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
-  font-size: 34px;
-  line-height: calc(43 / 34);
+  font-size: 30px;
+  line-height: calc(38 / 30);
 
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: #fcfcfc;
+  padding-bottom: 32px;
+}
+
+.about__image {
+  display: block;
+  width: 280px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background-image: url(../images/about/img_mob@279.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about__ice {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(21 / 12);
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #fcfcfc;
+}
+
+.about__ice {
+  width: 220px;
+  margin: 0 auto;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(21 / 12);
+  text-align: center;
+
+  color: #fcfcfc;
+}
+
+.about__natural {
+  width: 220px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(19 / 12);
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: #fcfcfc;
+}
+
+.about_cream {
+  display: none;
+}
+
+.about__button {
+  background-color: #f8d24e;
+  border-radius: 10px;
+  font-weight: 600;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  border: none;
+  width: 176px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
