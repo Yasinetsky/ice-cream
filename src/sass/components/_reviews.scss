@@ -1,24 +1,11 @@
-.slideshow__list {
-    display: flex;
-    justify-content: center;
-    width: auto;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
 
     .slideshow__item {
 
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
-    .slideshow__item.current {
-        display: flex;
-    }
-
-}
 
 .slideshow__photo {
     display: block;
