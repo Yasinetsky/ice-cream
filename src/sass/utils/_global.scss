@@ -3,33 +3,33 @@ body {
 
   font-family: 'Montserrat', sans-serif;
 
-  // background-image: url(../images/body_bg/bg_p1x.jpg);
+  background-image: url(../images/body_bg/bg_p1x.jpg);
 
-  // @media screen and (min-device-pixel-ratio: 2),
-  //   screen and (min-resolution: 192dpi),
-  //   screen and (min-resolution: 2dppx) {
-  //   background-image: url(../images/body_bg/bg_p2x.jpg);
-  // }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/body_bg/bg_p2x.jpg);
+  }
 
-  // @media screen and (min-width: 767px) {
-  //   background-image: url(../images/body_bg/bg_t1x.jpg);
+  @media screen and (min-width: 767px) {
+    background-image: url(../images/body_bg/bg_t1x.jpg);
 
-  //   @media screen and (min-device-pixel-ratio: 2),
-  //     screen and (min-resolution: 192dpi),
-  //     screen and (min-resolution: 2dppx) {
-  //     background-image: url(../images/body_bg/bg_t2x.jpg);
-  //   }
-  // }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/body_bg/bg_t2x.jpg);
+    }
+  }
 
-  // @media screen and (min-width: 1200px) {
-  //   background-image: url(../images/body_bg/bg_d1x.jpg);
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/body_bg/bg_d1x.jpg);
 
-  //   @media screen and (min-device-pixel-ratio: 2),
-  //     screen and (min-resolution: 192dpi),
-  //     screen and (min-resolution: 2dppx) {
-  //     background-image: url(../images/body_bg/bg_d2x.jpg);
-  //   }
-  // }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/body_bg/bg_d2x.jpg);
+    }
+  }
   //   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -51,4 +51,24 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.container{
+  @include mq(desktop, max){
+    padding: 0 32px;
+  };
+  @include mq(tablet, max){
+    padding: 0 20px;
+  };
+  @include mq(desktop){
+    padding: 0 16px;
+  };
 }
