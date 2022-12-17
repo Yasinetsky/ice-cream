@@ -59,7 +59,7 @@
 .list {
   font-weight: 700;
   font-size: 32px;
-  line-height: 39px;
+  line-height: 1.2;
   color: #FCFCFC;
   &:hover,
   &:focus{
@@ -67,7 +67,7 @@
   }
   @media screen and (min-width:1200px) {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
     color: #FCFCFC;
   }
 }
@@ -159,7 +159,7 @@
   .mobi_list{
     font-weight: 700;
     font-size: 32px;
-    line-height: 39px;
+    line-height: 1.2;
     color: #FCFCFC;
     &:hover,
     &:focus{
@@ -167,7 +167,7 @@
   }
   @media screen and (min-width:768px) {
     font-size: 48px;
-    line-height: 59px;
+    line-height: 1.22;
   }
 }
 .menu_svg{
