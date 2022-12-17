@@ -1,0 +1,41 @@
+.about {
+  background-color: #84a178;
+  padding-bottom: 60px;
+}
+
+.about__text {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+
+  @include mq(tablet) {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: calc(27 / 22);
+  }
+
+  @include mq(desktop) {
+    font-size: 30px;
+    line-height: calc(37 / 30);
+  }
+}
+
+.about__titel {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: calc(43 / 34);
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+}
