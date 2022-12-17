@@ -1,0 +1,24 @@
+
+.gallery__slider{
+color: none;
+}
+
+
+.gallery__list {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.gallery__img{
+
+border-radius: 8px;
+
+@media screen and (min-width:1200px)  {
+border-radius: 25px;
+}
+@media screen and (min-width:768px) {
+        border-radius: 18px;
+}
+
+}

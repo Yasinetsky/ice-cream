@@ -1,0 +1,90 @@
+.contacts{
+    background-color: #84A178;
+    display: flex;
+    padding-bottom: 60px;
+
+    color: #131313;
+    font-style: normal;
+
+    &__set{
+        background-color: #FCFCFC;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        padding-top: 40px;
+        padding-bottom: 24px;
+        padding-right: 32px;
+        padding-left: 32px;
+        
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 16px;
+
+        width: 280px;
+    }
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__categories{
+        padding: 4px 22px;
+        background-color: #F8D24E;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+
+    &__place{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(14px/12px);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        
+        /*color: #131313;*/
+    }
+
+    &__address{
+        padding-bottom: 24px;
+        border-bottom: 1px solid #E1E1E1;
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(22px/12px);
+        letter-spacing: 0.04em;
+    }
+
+    &__city{
+        font-style: normal;
+    }
+
+    &__link{
+        text-decoration: none;
+        font-style: normal;
+        color: #D6936D;
+    }
+
+    /*&__days{        
+        color: #131313;
+    }*/
+
+    &__hours{
+        color: #ABABAB;
+    }
+
+    &__communication{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(19px/12px);
+
+        .info{
+            color: #131313;
+        }
+    }
+}
