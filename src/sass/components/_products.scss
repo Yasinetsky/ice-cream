@@ -1,0 +1,238 @@
+.products {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.products__container {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+
+  @include mq(tablet) {
+    max-width: 768px;
+  }
+
+  @include mq(desktop) {
+    max-width: 1200px;
+  }
+}
+
+.products__label {
+  margin-bottom: 12px;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $secondary;
+
+  @include mq(tablet) {
+    font-size: 30px;
+    line-height: calc(37 / 30);
+  }
+}
+
+.products__title {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: calc(38 / 30);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $secondary;
+
+  margin-bottom: 168px;
+
+  @include mq(tablet) {
+    font-size: 36px;
+    line-height: calc(45 / 36);
+    margin-bottom: 200px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 300px;
+  }
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 168px;
+
+  @include mq(tablet) {
+    gap: 16px;
+  }
+
+  @include mq(desktop) {
+    gap: 29px;
+  }
+}
+
+.products__item {
+  position: relative;
+  flex-basis: 100%;
+  min-height: 420px;
+  padding: 123px 40px 16px 40px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #aec6a5;
+
+  transition: transform 0.5s ease-in-out;
+
+  @include mq(tablet) {
+    flex-basis: calc((100% - 16px * 2) / 3);
+    padding: 108px 26px 12px 26px;
+    min-height: 428px;
+  }
+
+  @include mq(desktop) {
+    flex-basis: calc((100% - 29px * 2) / 3);
+    padding: 165px 64px 60px 64px;
+    min-height: 536px;
+  }
+
+  &:nth-child(2) {
+    background-color: #efd478;
+  }
+  &:last-child {
+    background-color: #d6936d;
+  }
+
+  @include mq(tablet) {
+    &:hover {
+      transform: translateY(-30px);
+    }
+  }
+}
+
+.product__shadow {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  transition: transform 0.5s ease-in-out;
+
+  @include mq(desktop) {
+    width: 302px;
+    height: 302px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-11px);
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+
+    transition: transform 0.5s ease-in-out;
+
+    @include mq(desktop) {
+      width: 302px;
+      height: 302px;
+    }
+
+    @include mq(tablet) {
+      .products__item:hover & {
+        transform: translateY(0px);
+      }
+    }
+  }
+
+  &--green {
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+    &::before {
+      background-image: url(../images/products/img_1.jpg);
+    }
+  }
+
+  &--yellow {
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+
+    &::before {
+      background-image: url(../images/products/img_2.jpg);
+    }
+  }
+
+  &--coral {
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+
+    &::before {
+      background-image: url(../images/products/img_3.jpg);
+    }
+  }
+}
+.products__subtitle {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $secondary;
+
+  @include mq(tablet) {
+    font-size: 22px;
+    line-height: calc(27 / 22);
+  }
+
+  @include mq(desktop) {
+    font-size: 30px;
+    line-height: calc(37 / 30);
+    margin-bottom: 66px;
+  }
+}
+.products__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: $secondary;
+
+  @include mq(desktop) {
+    font-size: 16px;
+  }
+}
+
+.product__button {
+  width: 40px;
+  height: 16px;
+}
