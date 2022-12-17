@@ -75,9 +75,9 @@ ul {
   max-width: 480px;
   margin: 0 auto;
 
-  @include mq(mobile){
-    text-align: center;
-  };
+  // @include mq(mobile){
+  //   text-align: center;
+  // };
 
   @include mq(tablet) {
     max-width: 768px;
