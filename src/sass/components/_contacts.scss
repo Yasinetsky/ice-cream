@@ -1,17 +1,4 @@
-.contacts{
-    &__container{
-        text-align: left;
-
-        @media screen and (min-width:768px) {
-            display: flex;
-            gap: 16px;
-        }
-
-        @media screen and (min-width:1200px) {
-            padding-bottom: 32px;
-        }
-    }
-        
+.contacts{      
     background-color: #84A178;
     display: flex;
     padding-bottom: 60px;
@@ -27,6 +14,23 @@
         padding-bottom: 120px;
     }
 
+    &__list{
+        text-align: left;
+        margin-bottom: 20px;
+
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        @media screen and (min-width:1200px) {
+            gap: 32px;
+            margin-bottom: 60px;
+        }
+    }
+
     &__set{
         width: 280px;
         background-color: #FCFCFC;
@@ -37,19 +41,17 @@
         padding-right: 32px;
         padding-left: 32px;
         
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
         margin-bottom: 16px;
 
-        width: 280px;
+        &:last-child {
+            margin-bottom: 0;
+        }
 
         @media screen and (min-width:768px) {
             width: 224px;
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
             padding: 40px 24px;
+            margin-bottom: 0;
         }
     
         @media screen and (min-width:1200px) {
@@ -69,15 +71,16 @@
         background-color: #F8D24E;
         border-radius: 4px;
         margin-bottom: 20px;
+
+        @media screen and (min-width:768px) {
+            margin-bottom: 32px;
+        }
     }
 
     &__place{
         font-weight: 500;
         font-size: 12px;
         line-height: calc(14px/12px);
-        display: flex;
-        align-items: center;
-        text-align: center;
         letter-spacing: 0.04em;
     }
 
@@ -131,6 +134,7 @@
         }
 
         .info{
+            padding-top: 0;
             color: #131313;
         }
     }
