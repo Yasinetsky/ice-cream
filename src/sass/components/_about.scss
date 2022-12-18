@@ -232,6 +232,7 @@
   align-items: center;
   padding-top: 12px;
   padding-bottom: 12px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 
   &:hover {
     background-color: #0a8817;
@@ -260,6 +261,7 @@
   .about_button:focus > & {
     fill: #ffffff;
   }
+  transition: fill 0.5s ease-in-out;
 }
 
 .about__description {

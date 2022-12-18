@@ -1,24 +1,41 @@
+.gallery{
+ margin-top: -32px;
+ margin-bottom: 80px;
+ 
+@include mq(tablet) {
+        margin-top: -70px;
+        margin-bottom: 100px;
+        }
 
-.gallery__slider{
-color: none;
+@include mq(desktop) {
+        margin-top: -52px;
+        margin-bottom: 140px;
 }
 
+}
 
-.gallery__list {
+.gallery__item{
 display: flex;
-align-items: center;
+flex-direction: column;
 justify-content: center;
+align-items: center;
 }
+
 
 .gallery__img{
 
 border-radius: 8px;
 
-@media screen and (min-width:1200px)  {
-border-radius: 25px;
+@include mq (tablet)
+{
+border-radius: 18px;
+
 }
-@media screen and (min-width:768px) {
-        border-radius: 18px;
+
+@include mq (desktop)
+{
+border-radius: 27px;
+
 }
 
 }
