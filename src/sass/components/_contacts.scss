@@ -1,0 +1,313 @@
+.contacts{      
+    background-color: $primary-bgc;
+    display: flex;
+    padding-bottom: 60px;
+
+    color: #131313;
+    font-style: normal;
+
+    @media screen and (min-width:768px) {
+        padding-bottom: 40px;
+    }
+    
+    @media screen and (min-width:1200px) {
+        padding-bottom: 120px;
+    }
+
+    &__list{
+        text-align: left;
+        margin-bottom: 20px;
+
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        @media screen and (min-width:1200px) {
+            gap: 32px;
+            margin-bottom: 60px;
+        }
+    }
+
+    &__set{
+        width: 280px;
+        background-color: #FCFCFC;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        padding-top: 40px;
+        padding-bottom: 24px;
+        padding-right: 32px;
+        padding-left: 32px;
+        
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media screen and (min-width:768px) {
+            width: 224px;
+            display: flex;
+            padding: 40px 24px;
+            margin-bottom: 0;
+        }
+    
+        @media screen and (min-width:1200px) {
+            width: 368px;
+            padding: 40px;
+        }
+    }
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__place{
+        display: inline-flex;
+        padding: 4px 22px;
+        background-color: $accent-color;
+        border-radius: 4px;
+
+        margin-bottom: 20px;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(14px/12px);
+        letter-spacing: 0.04em;
+
+        @media screen and (min-width:768px) {
+            font-size: 16px;
+            line-height: calc(22px/16px);
+
+            margin-bottom: 32px;
+            padding: 4px 13px;
+        }
+
+        @media screen and (min-width:1200px) {
+            padding: 4px 14px;
+        }
+    }
+
+    &__address{
+        padding-bottom: 24px;
+        border-bottom: 1px solid #E1E1E1;
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(22px/12px);
+        letter-spacing: 0.04em;
+
+        @media screen and (min-width:768px) {
+            padding-bottom: 32px;
+            margin-bottom: 32px;
+
+            font-size: 14px;
+            line-height: calc(26px/14px);
+        }
+
+        @media screen and (min-width:1200px) {
+            font-size: 16px;
+            line-height: calc(29px/16px);
+        }
+    }
+
+    &__city{
+        font-style: normal;
+    }
+
+    &__link{
+        padding-top: 8px;
+        text-decoration: none;
+        font-style: normal;
+        color: $color-address;
+
+        @media screen and (min-width:768px) {
+            padding-top: 12px;
+        }
+
+        @media screen and (min-width:1200px) {
+            padding-top: 8px;
+        }
+
+        &:hover, 
+        &:focus{
+            text-decoration: underline;
+        }
+    }
+
+    &__time{        
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media screen and (min-width:1200px) {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__days {
+        font-style: normal;
+    }
+
+    &__hours{
+        color: $light-secondary-color;
+
+        @media screen and (min-width:768px) {
+            color: #907E82;
+        }
+
+        @media screen and (min-width:1200px) {
+            color: $light-secondary-color;
+        }
+    }
+
+    &__communication{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(19px/12px);
+
+        .item {
+            margin-bottom: 6px;
+                
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .info{
+            padding-top: 0;
+            color: $secondary;
+            text-decoration: none;
+        }
+
+        @media screen and (min-width:768px) {
+            font-size: 14px;
+            line-height: calc(21px/14px);
+
+            .item {
+                margin-bottom: 4px;
+            }
+        }
+
+        @media screen and (min-width:1200px) {
+            font-size: 16px;
+            line-height: calc(24px/16px);
+        }
+    }
+
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+
+        font-family: Montserrat;
+        font-style: normal;
+
+        min-width: 196px;
+
+        .item{
+            margin-bottom: 16px;
+        }
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: center;
+            
+
+            .item{
+                margin: 0;
+            }
+        }
+    }
+
+    &__label{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: calc(18px/14px);
+
+        margin-right: 4px;
+    }
+}
+
+.contacts__btn{
+
+    &--yellow{
+        width: 196px;
+        height: 42px;
+
+        border-radius: 10px;
+        background-color: $accent-color;
+        border-color: transparent;
+        color: #131313;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $hov-foc;
+            color: #000000;;
+        }
+
+        &:focus{
+            background-color: $hov-foc;
+            color: #FFFFFF;
+            fill: #FFFFFF;
+        }
+
+        &:disabled{
+            background-color: $light-secondary-color;
+        }
+    }
+
+    &--transparent{
+        width: 196px;
+        height: 42px;
+        
+        background-color: transparent;
+        border: 2px solid $accent-color;
+        border-radius: 10px;
+        color: #000000;
+        cursor: pointer;
+
+        &:hover{            
+            border: 2px solid $hov-foc;
+        }
+
+        &:focus{
+            border: 2px solid $hov-foc;
+            color: #FFFFFF;
+            fill: #FFFFFF;
+        }
+
+        &:disabled{
+            border: 2px solid $light-secondary-color;
+        }
+
+        @media screen and (min-width:768px) {
+            margin-left: 16px;
+        }
+    }
+}
+.contacts__container{
+    margin-top: -353px;
+
+    @media screen and (min-width:768px) {
+        margin-top: -299px;
+    }
+    
+    @media screen and (min-width:1200px) {
+        margin-top: -128px;
+    }
+}

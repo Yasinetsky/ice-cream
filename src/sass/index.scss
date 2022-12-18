@@ -2,8 +2,8 @@
 // @import './example';
 
 // utils
-@import './utils/global';
 @import './utils/variables';
+@import './utils/global';
 
 // components
 @import './components/header';
@@ -15,5 +15,5 @@
 @import './components/reviews';
 @import './components/contacts';
 @import './components/footer';
-@import './components/modal';
+@import './components/modals';
 @import './components/button';
