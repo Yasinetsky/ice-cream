@@ -115,9 +115,9 @@
 .slick-dots {
     bottom: 20px;
     text-align: center;
-    display: flex; // поставить кнопки в ряд
-    justify-content: center; // выровнять по центру
-    list-style: none; // убираем черные маркеры
+    display: flex; // поставити кнопки в ряд
+    justify-content: center; // вирівняти по центру
+    list-style: none; // прибираемо чорні маркери
 }
 
 .slick-dots li button {
@@ -125,13 +125,13 @@
     top: -15px;
     left: -15px;
 
-    background: #D9D9D9; // цвет фона
+    background: #D9D9D9; // колір фону
     border: none; // без рамки
-    border-radius: 50%; // радиус закругления
-    height: 15px; // высота точки
+    border-radius: 50%; // радіус заокруглення
+    height: 15px; // висота точки
     width: 15px; // ширина точки
-    margin: 18px; // отступы между точками
-    outline: none; // убираем обводку
+    margin: 18px; // відступы між точками
+    outline: none; // прибираемо обводку
 
     &::before {
         color: transparent;
