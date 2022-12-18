@@ -78,7 +78,25 @@
   @include mq(tablet) {
     width: 330px;
     height: 330px;
+    margin: 0;
     margin-right: 38px;
+  }
+
+  @include mq(desktop) {
+    width: 490px;
+    height: 490px;
+    margin: 0;
+    margin-right: 109px;
+    margin-bottom: 60px;
+
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    border-radius: 250px;
   }
 
   &::before {
@@ -97,32 +115,18 @@
     @include mq(tablet) {
       width: 330px;
       height: 330px;
+      margin-bottom: 0px;
       background-image: url(../images/about/img_tab@330.png);
+    }
+    @include mq(desktop) {
+      width: 490px;
+      height: 490px;
+      transform: translateY(39px);
+      margin-bottom: 0px;
+      background-image: url(../images/about/img_desk@490.png);
     }
   }
 }
-
-// .about__image {
-//   display: block;
-//   width: 280px;
-//   height: 300px;
-//   margin: 0 auto;
-//   margin-bottom: 40px;
-//   background-image: url(../images/about/img_mob@279.png);
-//   background-size: contain;
-//   background-repeat: no-repeat;
-
-//   @include mq(tablet) {
-//     width: 330px;
-//     margin-right: 30px;
-//     background-image: url(../images/about/img_tab@330.png);
-//   }
-
-//   @include mq(desktop) {
-//     width: 490px;
-//     background-image: url(../images/about/img_desk@490.png);
-//   }
-// }
 
 .about__ice {
   width: 220px;
@@ -246,10 +250,16 @@
     margin: 0;
     max-width: 100%;
   }
+  @include mq(desktop) {
+    align-items: center;
+  }
 }
 
 .about__description-items {
   @include mq(tablet) {
     width: 330px;
+  }
+  @include mq(desktop) {
+    width: 463px;
   }
 }
