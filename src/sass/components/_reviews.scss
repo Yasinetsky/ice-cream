@@ -5,12 +5,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 145px;
+        margin-bottom: 50px;
     }
 
 .slideshow__photo {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
     border-radius: 50%;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .slick-dots {
-    bottom: 100px;
+    bottom: 20px;
     text-align: center;
     display: flex; // поставить кнопки в ряд
     justify-content: center; // выровнять по центру
