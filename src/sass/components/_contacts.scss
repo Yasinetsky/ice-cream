@@ -153,6 +153,10 @@
         }
     }
 
+    &__days {
+        font-style: normal;
+    }
+
     &__hours{
         color: $light-secondary-color;
 
@@ -217,13 +221,17 @@
             margin-bottom: 0;
         }
 
-    @media screen and (min-width:768px) {
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: center;
-        margin: 0;
-    }
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: center;
+            
+
+            .item{
+                margin: 0;
+            }
+        }
     }
 
     &__label{
