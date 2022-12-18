@@ -57,3 +57,14 @@
 
     color: $secondary;
 }
+
+.slick-dots {
+    text-align: center;
+    display: flex; // поставить кнопки в ряд
+    justify-content: center; // выровнять по центру
+    list-style: none; // убираем черные маркеры
+}
+
+.slick-initialized .slick-slide{
+    display: flex;
+}
