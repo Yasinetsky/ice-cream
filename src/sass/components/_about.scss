@@ -122,6 +122,7 @@
       width: 330px;
       height: 330px;
       margin-bottom: 0px;
+      transform: translateY(26px);
       background-image: url(../images/about/img_tab@330.png);
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -204,12 +205,13 @@
     font-weight: 400;
     font-size: 14px;
     line-height: calc(27 / 14);
-    margin-bottom: 54px;
+    margin-bottom: 32px;
     text-align: start;
 
     color: #fcfcfc;
   }
   @include mq(desktop) {
+    margin-bottom: 54px;
     width: 463px;
   }
 }
