@@ -111,12 +111,23 @@
     margin-bottom: 40px;
     background-image: url(../images/about/img_mob@279.png);
     background-repeat: no-repeat;
+    background-size: contain;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about/img_mob@558.png);
+    }
 
     @include mq(tablet) {
       width: 330px;
       height: 330px;
       margin-bottom: 0px;
       background-image: url(../images/about/img_tab@330.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/about/img_tab@660.png);
+      }
     }
     @include mq(desktop) {
       width: 490px;
@@ -124,6 +135,11 @@
       transform: translateY(39px);
       margin-bottom: 0px;
       background-image: url(../images/about/img_desk@490.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/about/img_desk@980.png);
+      }
     }
   }
 }
