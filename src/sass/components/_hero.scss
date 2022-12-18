@@ -150,8 +150,8 @@
   text-align: right;
   color: $primary-color;
 }
-.plate-image,
-.plate-image_description {
+.plate-image, .plate-image_text,
+.plate-image_description, .hero__icon-arrow {
   @media screen and (max-width: 767px) {
     display: none;
   }
