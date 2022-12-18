@@ -257,20 +257,17 @@
 
         &:hover{
             background-color: $hov-foc;
-            border-color: $hov-foc;
             color: #000000;;
         }
 
         &:focus{
             background-color: $hov-foc;
-            border-color: $hov-foc;
             color: #FFFFFF;
             fill: #FFFFFF;
         }
 
         &:disabled{
             background-color: $light-secondary-color;
-            border-color: $light-secondary-color;
         }
     }
 
