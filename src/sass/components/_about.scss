@@ -62,6 +62,7 @@
 .about__description-image {
   position: relative;
   margin: 0 auto;
+  margin-bottom: 62px;
   display: block;
   width: 279px;
   height: 278px;
@@ -74,15 +75,30 @@
   box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
   border-radius: 165px;
 
+  @include mq(tablet) {
+    width: 330px;
+    height: 330px;
+    margin-right: 38px;
+  }
+
   &::before {
+    width: 279px;
+    height: 278px;
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(11px);
+    transform: translateY(22px);
     content: '';
-    width: 279px;
-    height: 278px;
+
+    margin-bottom: 40px;
     background-image: url(../images/about/img_mob@279.png);
+    background-repeat: no-repeat;
+
+    @include mq(tablet) {
+      width: 330px;
+      height: 330px;
+      background-image: url(../images/about/img_tab@330.png);
+    }
   }
 }
 
