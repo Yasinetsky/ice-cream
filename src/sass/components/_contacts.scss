@@ -184,6 +184,7 @@
         .info{
             padding-top: 0;
             color: #131313;
+            text-decoration: none;
         }
 
         @media screen and (min-width:768px) {
@@ -219,10 +220,13 @@
             margin-bottom: 0;
         }
 
-         @media screen and (min-width:768px) {
-            display: inline;
-            margin: 0;
-        }
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+        margin: 0;
+    }
     }
 
     &__label{
@@ -244,6 +248,7 @@
         background-color: #F8D24E;
         border-color: transparent;
         color: #131313;
+        cursor: pointer;
 
         &:hover{
             background-color: #0A8817;
@@ -272,6 +277,7 @@
         border: 2px solid #F8D24E;
         border-radius: 10px;
         color: #000000;
+        cursor: pointer;
 
         &:hover{            
             border: 2px solid #0A8817;;
