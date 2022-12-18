@@ -42,7 +42,21 @@
   text-transform: uppercase;
 
   color: #fcfcfc;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
+
+  @include mq(tablet) {
+    width: 100%;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: calc(43 / 34);
+    margin-bottom: 72px;
+  }
+
+  @include mq(desktop) {
+    font-size: 36px;
+    line-height: calc(45 / 36);
+    margin-bottom: 82px;
+  }
 }
 
 .about__image {
@@ -54,16 +68,14 @@
   background-image: url(../images/about/img_mob@279.png);
   background-size: contain;
   background-repeat: no-repeat;
-}
 
-.about__ice {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: calc(21 / 12);
-  text-align: center;
-  letter-spacing: 0.04em;
+  //   @include mq(tablet) {
+  //     background-image: url(../images/about/img_mob@558.png);
+  //   }
 
-  color: #fcfcfc;
+  //   @include mq(tablet) {
+  //     background-image: url(../images/about/img_mob@490.png);
+  //   }
 }
 
 .about__ice {
@@ -76,12 +88,20 @@
   text-align: center;
 
   color: #fcfcfc;
+
+  @include mq(tablet) {
+    width: 463px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(28 / 16);
+    margin-bottom: 8;
+  }
 }
 
 .about__natural {
   width: 220px;
   margin: 0 auto;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-weight: 400;
   font-size: 12px;
   line-height: calc(19 / 12);
@@ -89,26 +109,73 @@
   letter-spacing: 0.01em;
 
   color: #fcfcfc;
+
+  @include mq(tablet) {
+    width: 463px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(27 / 14);
+    margin-bottom: 8;
+  }
 }
 
 .about_cream {
   display: none;
+
+  @include mq(tablet) {
+    width: 463px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(27 / 14);
+    margin-bottom: 54px;
+
+    color: #fcfcfc;
+  }
 }
 
-.about__button {
+.about_button {
+  margin: 0 auto;
   background-color: #f8d24e;
   border-radius: 10px;
   font-weight: 600;
-  text-align: justify;
   font-size: 14px;
-  line-height: 17px;
+  line-height: calc(17 / 14);
   color: #000000;
   border: none;
-  width: 176px;
+  width: 164px;
   height: 42px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  &:hover {
+    background-color: #0a8817;
+  }
+  &:focus {
+    color: #ffffff;
+    background-color: #0a8817;
+  }
+
+  &:disabled {
+    background-color: #ababab;
+    color: #000000;
+  }
+}
+.button_svg {
+  margin-left: 4px;
+  fill: #000000;
+
+  &:focus {
+    fill: #ffffff;
+  }
+  .about_button:focus > & {
+    fill: #ffffff;
+  }
+
+  // @include mq(tablet) {
+  //   margin: 0 0;
+  // }
 }
