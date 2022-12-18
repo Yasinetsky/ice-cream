@@ -69,13 +69,16 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  //   @include mq(tablet) {
-  //     background-image: url(../images/about/img_mob@558.png);
-  //   }
+  @include mq(tablet) {
+    width: 330px;
+    margin-right: 30px;
+    background-image: url(../images/about/img_tab@330.png);
+  }
 
-  //   @include mq(tablet) {
-  //     background-image: url(../images/about/img_mob@490.png);
-  //   }
+  @include mq(desktop) {
+    width: 490px;
+    background-image: url(../images/about/img_desk@490.png);
+  }
 }
 
 .about__ice {
@@ -90,11 +93,16 @@
   color: #fcfcfc;
 
   @include mq(tablet) {
-    width: 463px;
+    width: 330px;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(28 / 16);
     margin-bottom: 8;
+    text-align: start;
+  }
+
+  @include mq(desktop) {
+    width: 463px;
   }
 }
 
@@ -111,11 +119,16 @@
   color: #fcfcfc;
 
   @include mq(tablet) {
-    width: 463px;
+    width: 330px;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(27 / 14);
     margin-bottom: 8;
+    text-align: start;
+  }
+
+  @include mq(desktop) {
+    width: 463px;
   }
 }
 
@@ -123,14 +136,18 @@
   display: none;
 
   @include mq(tablet) {
-    width: 463px;
+    width: 330px;
     display: inline-block;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(27 / 14);
     margin-bottom: 54px;
+    text-align: start;
 
     color: #fcfcfc;
+  }
+  @include mq(desktop) {
+    width: 463px;
   }
 }
 
@@ -175,7 +192,21 @@
     fill: #ffffff;
   }
 
-  // @include mq(tablet) {
-  //   margin: 0 0;
-  // }
+  @include mq(tablet) {
+    margin: auto;
+  }
+}
+
+.about__description {
+  @include mq(tablet) {
+    display: flex;
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+.about__description-items {
+  @include mq(tablet) {
+    width: 330px;
+  }
 }
