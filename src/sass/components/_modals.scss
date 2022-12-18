@@ -1,4 +1,4 @@
-// modal about produc
+// modal about product
 .modal-product {
   position: absolute;
   top: 50%;
@@ -11,6 +11,8 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  top: 80px;
+  transform: translate(-50%);
   transform: translate(-50%, -50%) scale(1);
 
   @include mq(tablet){
@@ -18,6 +20,16 @@
     max-height: 996px;
     padding: 32px 40px;
   };
+
+  // @include mq(desktop, max){
+  //   top: 80px;
+  //   transform: translate(-50%);
+  // };
+
+  // @include mq(desktop){
+  //   top: 80px;
+  //   transform: translate(-50%);
+  // };
 }
 
 .backdrop {
@@ -29,6 +41,7 @@
 
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -226,19 +239,12 @@
   font-size: 14px;
   line-height: calc(25 / 14);
   letter-spacing: 0.04em;
-  color: #131313;
+  color: $secondary;
 }
 
 .modal-ingridients__item:not(:last-child) {
   margin-bottom: 11px;
 }
-
-
-// .product-form__label {
-//   display: flex;
-//   justify-content: center;
-//   width: 100%;
-// }
 
 .product-form__input {
   width: 100%;
@@ -247,10 +253,8 @@
   margin-bottom: 16px;
 
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
+  border: 1px solid $primary-bgc;
   border-radius: 10px;
-
-  // outline: transparent;
 
   @include mq(tablet){
     padding: 11px 16px;
@@ -264,7 +268,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: calc(20 / 14);
-    color: #131313;
+    color: $secondary;
   }
 }
 
@@ -276,10 +280,8 @@
 
   resize: none;
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
+  border: 1px solid $primary-bgc;
   border-radius: 10px;
-
-  // outline: transparent;
   
   @include mq(tablet){
     padding: 11px 16px;
@@ -294,7 +296,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: calc(20 / 14);
-    color: #131313;
+    color: $secondary;
   }
 }
 
@@ -306,13 +308,13 @@
   align-items: center;
   justify-content: center;
 
-  background: #f8d24e;
+  background: $accent-color;
   border-radius: 10px;
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 14px;
   line-height: calc(17 / 14);
-  color: #131313;
+  color: $secondary;
   border: none;
 
   @include mq(tablet){
