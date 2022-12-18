@@ -1,0 +1,97 @@
+
+    .slideshow__item {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 145px;
+    }
+
+.slideshow__photo {
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.slideshow__text {
+    display: block;
+    max-width: 270px;
+
+    margin-bottom: 32px;
+    ;
+
+    padding: 35px 39px;
+
+    background: hsla(102, 18%, 55%, 1);
+    color: $primary-color;
+    border-radius: 10px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(31px / 12px);
+    text-align: center;
+}
+
+
+@include mq('tablet', 'min') {
+    .slideshow__text {
+        max-width: 705px;
+    }
+}
+
+@include mq('desktop', 'min') {
+    .slideshow__text {
+        max-width: 980px;
+    }
+}
+
+.slideshow__name {
+    margin: 0;
+    max-width: 189px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(37px / 20px);
+    text-align: center;
+
+    color: $secondary;
+}
+
+.slick-dots {
+    bottom: 100px;
+    text-align: center;
+    display: flex; // поставить кнопки в ряд
+    justify-content: center; // выровнять по центру
+    list-style: none; // убираем черные маркеры
+}
+.slick-dots li button {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+
+    background: #D9D9D9;// цвет фона
+    border: none; // без рамки
+    border-radius: 50%; // радиус закругления
+    height: 15px; // высота точки
+    width: 15px; // ширина точки
+    margin: 18px; // отступы между точками
+    outline: none; // убираем обводку
+
+    &::before {
+            color: transparent;
+        }
+}
+
+.slick-dots li[class="slick-active"] button {
+   background: #84A178;
+
+   &::before{
+    color:transparent;
+   }
+}
+
+.slick-initialized .slick-slide{
+    display: flex;
+}
