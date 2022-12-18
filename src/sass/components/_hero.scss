@@ -1,0 +1,220 @@
+.hero {
+  height: 453px;
+  background-color: #84a178;
+
+  @media screen and (min-width: 768px) {
+    height: 349px;
+  }
+
+  @media screen and (min-width: 1199px) {
+    height: 591px;
+  }
+}
+
+.container_hero {
+  position: relative;
+  max-width: 480px;
+  height: 453px;
+  background-image: url(../images/hero/bg-image@m.png);
+  background-repeat: no-repeat;
+  background-position: 0px bottom;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 349px;
+    background-image: url(../images/hero/bg-image@t.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    height: 591px;
+    background-image: url(../images/hero/bg-image@d.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+}
+
+.hero__title {
+  color: $primary-color;
+  font-family: Seymour One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: calc(33 / 26);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  padding-top: 50px;
+  max-width: 247px;
+  text-align: left;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 14px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 367px;
+    padding-top: 45px;
+    margin-bottom: 28px;
+    font-size: 38px;
+    line-height: calc(44 / 38);
+  }
+
+  @media screen and (max-width: 1199px) {
+    &--larger {
+      font-size: 34px;
+      line-height: calc(33 / 34);
+    }
+  }
+}
+
+.buttons-hero {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.sales-points__item {
+  margin-bottom: 20px;
+  min-width: 46px;
+}
+.sales-points__number {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: calc(34 / 28);
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $secondary;
+}
+.button-products {
+  display: flex;
+  border: 2px solid $accent-color;
+  border-radius: 10px;
+  width: 108px;
+  height: 38px;
+  line-height: calc(15 / 12);
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+
+  @media screen and (min-width: 1200px) {
+    width: 134px;
+    height: 42px;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    color: $secondary;
+  }
+}
+
+.button-how {
+  display: flex;
+  width: 100px;
+  height: 24px;
+  line-height: calc(17 / 14);
+  align-items: center;
+  justify-content: center;
+  color: $accent-color;
+  text-decoration: underline;
+  @media screen and (min-width: 1200px) {
+    width: 154px;
+    height: 40px;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}
+
+.sales-points {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  position: absolute;
+  right: 32px;
+  top: 28px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: calc(10 / 8);
+  text-align: right;
+  color: $primary-color;
+}
+.plate-image, .plate-image_text,
+.plate-image_description, .hero__icon-arrow {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.plate-image {
+  position: absolute;
+  left: 32px;
+  top: 185px;
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    left: 16px;
+    top: 301px;
+  }
+}
+
+.plate-image_description {
+  display: flex;
+  flex-direction: column;
+}
+
+.plate-image_text {
+  margin-left: 184px;
+  margin-top: 39px;
+  margin-bottom: 12px;
+  text-align: left;
+  width: 139px;
+  font-size: 12px;
+  line-height: calc(17 / 12);
+  color: #fcfcfc;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 241px;
+    margin-top: 122px;
+    width: 200px;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    margin-bottom: 24px;
+  }
+}
+
+.hero__icon-arrow {
+  margin-left: 184px;
+  fill: $primary-color;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 241px;
+  }
+}
+
+.hero-main-image {
+  position: absolute;
+  top: 236px;
+  left: 135px;
+
+  @media screen and (min-width: 767px) {
+    left: 408px;
+    top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 31px;
+    left: 652px;
+  }
+}
