@@ -1,8 +1,18 @@
+<!-- modal about product -->
 <div class="backdrop">
-    <div class="modal-product">
-        <button class="modal-product__button"></button>
+    <div id="about-product_mod" class="modal-product">
+        <button class="modal-product__button">
+            <svg class="modal-product__icon modal-product__icon--small" width="20" height="20">
+                <use href="./images/icon-project.svg#icon-close-line"></use>
+            </svg>
+            <svg class="modal-product__icon modal-product__icon--big" width="24" height="24">
+                <use href="./images/icon-project.svg#icon-close-line"></use>
+            </svg>
+        </button>
 
         <h2 class="modal-product__name">Chololate icecream</h2>
+
+        <div class="modal-product__picture"></div>
 
         <ul class="modal-components">
             <li class="modal-components__item">
@@ -62,6 +72,23 @@
             </li>
         </ul>
 
-        <form class=""></form>
+        <form class="product-form" name="product-form" autocomplete="on">
+            <label class="product-form__label">
+                <input class="product-form__input" type="text" name="product-form__name" placeholder="Name" />
+            </label>
+
+            <label class="product-form__label">
+                <input class="product-form__input" type="tel" name="product-form__tel" placeholder="Phone" />
+            </label>
+
+            <label class="product-form__label">
+                <textarea class="product-form__comment " name="product-form__comment" placeholder="Comment"></textarea>
+            </label>
+
+            <button id="product-form__btn" class="product-form__btn" type="submit">Submit</button>
+        </form>
+
+        
+
     </div>
 </div>
