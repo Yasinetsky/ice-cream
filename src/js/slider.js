@@ -1,4 +1,4 @@
-$('.slideshow').slick({arrows: false, // не показывать стрелки
-dots: true, // показывать точки индикаторы
-dotsClass: 'slick-dots', // название класса для точек
+$('.slideshow').slick({arrows: false, // не показувати стрілки
+dots: true, // показувати точки індикатори
+dotsClass: 'slick-dots', // назва класу для точок
 });
