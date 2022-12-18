@@ -185,6 +185,8 @@
       color: #fcfcfc;
     }
   }
+
+  //Modal-video
 .backdrop {
     position: fixed;
     top: 0;
@@ -205,15 +207,15 @@
 
 }
 .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     width: 568px;
     height: 449px;
     background: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
     transition: transform 300ms ease-out;
 }
 .backdrop.is_hidden .modal {
