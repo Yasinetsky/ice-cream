@@ -65,9 +65,6 @@
         flex-direction: column;
     }
 
-    /*&__categories{ 
-    }*/
-
     &__place{
         display: inline-flex;
         padding: 4px 22px;
@@ -296,5 +293,16 @@
         @media screen and (min-width:768px) {
             margin-left: 16px;
         }
+    }
+}
+.contacts__container{
+    margin-top: -353px;
+
+    @media screen and (min-width:768px) {
+        margin-top: -299px;
+    }
+    
+    @media screen and (min-width:1200px) {
+        margin-top: -128px;
     }
 }
