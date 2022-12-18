@@ -1,5 +1,5 @@
 $('.slideshow').slick({
-    touchMove: true,
+    draggable: true,
     fade: true,
     cssEase: 'linear',
     arrows: false, // не показувати стрілки
