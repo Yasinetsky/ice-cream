@@ -180,6 +180,10 @@
     background-color: #ababab;
     color: #000000;
   }
+
+  @include mq(tablet) {
+    margin: 0;
+  }
 }
 .button_svg {
   margin-left: 4px;
@@ -190,10 +194,6 @@
   }
   .about_button:focus > & {
     fill: #ffffff;
-  }
-
-  @include mq(tablet) {
-    margin: auto;
   }
 }
 
