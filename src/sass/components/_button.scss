@@ -85,3 +85,58 @@
       fill:#FFFFFF;
       }
 }
+
+// buynow__btn
+.buynow__btn--close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+}
+
+.buynow__btn {
+  padding: 12px 34px;
+
+  min-width: 114px;
+  height: 42px;
+
+  background-color: $accent-color;
+  border-radius: 10px;
+  border-color: transparent;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  color: $secondary;
+
+  @include mq(tablet, max) {
+    margin-right: 55px;
+    margin-left: 55px;
+  }
+
+  @include mq(tablet) {
+    margin-right: 169px;
+    margin-left: 169px;
+    min-width: 121px;
+    font-size: 14px;
+    line-height: 1.41;
+  }
+
+  &:hover {
+    background-color: $hov-foc;
+  }
+
+  &:focus {
+    background-color: $hov-foc;
+    color: $primary-color;
+  }
+
+  &:disabled {
+    background-color: $light-secondary-color;
+  }
+}
+// buynow__btn
