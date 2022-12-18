@@ -1,4 +1,4 @@
-// modal about product
+// Modal about product
 .modal-product {
   position: absolute;
   top: 50%;
@@ -20,16 +20,6 @@
     max-height: 996px;
     padding: 32px 40px;
   };
-
-  // @include mq(desktop, max){
-  //   top: 80px;
-  //   transform: translate(-50%);
-  // };
-
-  // @include mq(desktop){
-  //   top: 80px;
-  //   transform: translate(-50%);
-  // };
 }
 
 .backdrop {
