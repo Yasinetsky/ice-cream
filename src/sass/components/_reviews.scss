@@ -1,12 +1,11 @@
+.slideshow__item {
 
-    .slideshow__item {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
 
 .slideshow__photo {
     display: block;
@@ -19,9 +18,7 @@
     max-width: 270px;
 
     margin-bottom: 32px;
-    ;
-
-    padding: 35px 39px;
+    padding: 32px 39px;
 
     background: hsla(102, 18%, 55%, 1);
     color: $primary-color;
@@ -32,29 +29,6 @@
     font-size: 12px;
     line-height: calc(31px / 12px);
     text-align: center;
-}
-
-.slick-dotted.slick-slider {
-    margin-bottom: 400px;
-}
-
-@include mq('tablet', 'min') {
-    .slideshow__text {
-        max-width: 705px;
-    }
-        .slick-dotted.slick-slider {
-            margin-bottom: 350px;
-        }
-}
-
-@include mq('desktop', 'min') {
-    .slideshow__text {
-        max-width: 980px;
-    }
-    
-    .slick-dotted.slick-slider {
-            margin-bottom: 200px;
-    }
 }
 
 .slideshow__name {
@@ -69,6 +43,67 @@
     color: $secondary;
 }
 
+.slick-dotted.slick-slider {
+    margin-bottom: 400px;
+}
+
+@include mq('tablet', 'min') {
+    .slideshow__text {
+        max-width: 705px;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 350px;
+    }
+
+    .slideshow__text {
+        border-radius: 24px;
+        padding: 29px 80px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: calc(26px / 14px);
+    }
+
+    .slideshow__name{
+        max-width: 172px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(30px / 16px);
+        
+    }
+}
+
+
+@include mq('desktop', 'min') {
+    .slideshow__text {
+        max-width: 968px;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 200px;
+    }
+
+    .slideshow__text {
+        border-radius: 24px;
+        padding: 43px 109px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(30px / 16px);
+    }
+
+        .slideshow__name {
+            max-width: 151px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: calc(30px / 16px);
+    
+        }
+}
+
+
+
 .slick-dots {
     bottom: 20px;
     text-align: center;
@@ -76,12 +111,13 @@
     justify-content: center; // выровнять по центру
     list-style: none; // убираем черные маркеры
 }
+
 .slick-dots li button {
     position: absolute;
     top: -15px;
     left: -15px;
 
-    background: #D9D9D9;// цвет фона
+    background: #D9D9D9; // цвет фона
     border: none; // без рамки
     border-radius: 50%; // радиус закругления
     height: 15px; // высота точки
@@ -90,18 +126,18 @@
     outline: none; // убираем обводку
 
     &::before {
-            color: transparent;
-        }
+        color: transparent;
+    }
 }
 
 .slick-dots li[class="slick-active"] button {
-   background: #84A178;
+    background: #84A178;
 
-   &::before{
-    color:transparent;
-   }
+    &::before {
+        color: transparent;
+    }
 }
 
-.slick-initialized .slick-slide{
+.slick-initialized .slick-slide {
     display: flex;
 }
