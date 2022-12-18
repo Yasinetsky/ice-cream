@@ -153,46 +153,56 @@
   font-size: 12px;
   line-height: calc(21 / 12);
   text-align: center;
+  letter-spacing: 0.04em;
 
   color: #fcfcfc;
 
   @include mq(tablet) {
-    width: 330px;
+    width: 334px;
     font-weight: 400;
-    font-size: 16px;
-    line-height: calc(28 / 16);
+    font-size: 12px;
+    line-height: calc(21 / 12);
     margin-bottom: 8;
     text-align: start;
+    letter-spacing: 0.04em;
   }
 
   @include mq(desktop) {
     width: 463px;
+    font-size: 16px;
+    line-height: calc(28 / 16);
+    letter-spacing: 0.04em;
   }
 }
 
 .about__natural {
-  width: 220px;
+  width: 239px;
   margin: 0 auto;
   margin-bottom: 10px;
   font-weight: 400;
   font-size: 12px;
+  font-style: normal;
   line-height: calc(19 / 12);
   text-align: center;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.04em;
 
   color: #fcfcfc;
 
   @include mq(tablet) {
-    width: 330px;
+    width: 334px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(27 / 14);
+    font-size: 12px;
+    line-height: calc(21 / 12);
     margin-bottom: 8;
     text-align: start;
+    letter-spacing: 0.04em;
   }
 
   @include mq(desktop) {
     width: 463px;
+    font-size: 14px;
+    line-height: calc(27 / 14);
+    letter-spacing: 0.04em;
   }
 }
 
@@ -200,11 +210,12 @@
   display: none;
 
   @include mq(tablet) {
-    width: 330px;
+    width: 293px;
     display: inline-block;
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(27 / 14);
+    font-size: 12px;
+    line-height: calc(23 / 12);
+    letter-spacing: 0.04em;
     margin-bottom: 32px;
     text-align: start;
 
@@ -213,6 +224,9 @@
   @include mq(desktop) {
     margin-bottom: 54px;
     width: 463px;
+    font-size: 14px;
+    line-height: calc(27 / 14);
+    letter-spacing: 0.04em;
   }
 }
 
