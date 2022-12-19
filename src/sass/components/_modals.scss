@@ -20,6 +20,7 @@
     max-height: 996px;
     padding: 32px 40px;
   };
+
 }
 
 .backdrop {
@@ -94,7 +95,32 @@
     ),
     #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 132px;
+    height: 132px;
+    transform: translateY(-7px);
+    background-image: url(../images/modal-about_product/img@1x.png);
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/modal-about_product/img@2x.png);
+    transform: translateY(-7px);
+
+    width: 132px;
+    height: 132px;
+    background-size: cover;
+  }
+
 }
+}
+
 // Buy now
 .overlay {
   /* Скрываем подложку  */
