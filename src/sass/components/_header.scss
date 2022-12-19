@@ -30,6 +30,7 @@
 }
 
 .header_item{
+  transition: color 0.25s ease-in-out 0s;
 
   &:not(:last-child){
     padding-bottom: 32px;
@@ -57,6 +58,8 @@
   font-size: 32px;
   line-height: 1.2;
   color: #FCFCFC;
+  transition: color 0.25s ease-in-out 0s;
+
   &:hover,
   &:focus{
     color: #131313;
@@ -157,6 +160,8 @@
     font-size: 32px;
     line-height: 1.2;
     color: #FCFCFC;
+    transition: color 0.25s ease-in-out 0s;
+
     &:hover,
     &:focus{
     color: #131313;
