@@ -1,0 +1,264 @@
+.buynow__modal {
+  @include mq(desktop, max) {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%) scale(1);
+  }
+  @include mq(desktop) {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  min-width: 280px;
+  min-height: 644px;
+
+  transition: transform 250ms var(--cubic-bezier);
+  @include mq(tablet, max) {
+    padding: 28px;
+  }
+  @include mq(tablet) {
+    min-width: 568px;
+    padding: 32px 54px;
+  }
+
+  background-color: $primary-color;
+  border: 2px solid $accent-color;
+  border-radius: 10px;
+}
+
+.buynow__title {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+
+  color: $secondary;
+
+  @include mq(tablet, max) {
+    margin-bottom: 82px;
+  }
+  @include mq(tablet) {
+    margin-bottom: 103px;
+  }
+}
+
+.buynow__list {
+  display: flex;
+  @include mq(tablet, max) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 83px;
+    margin-bottom: 32px;
+  }
+
+  @include mq(tablet) {
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+.buynow__type {
+  position: relative;
+
+  padding: 0 16px;
+  padding-top: 96px;
+  padding-bottom: 20px;
+
+  min-width: 136px;
+  height: 135px;
+
+  &--green {
+    border: 2px solid #96af8c;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    border-radius: 15px;
+  }
+
+  &--yellow {
+    background: #efd478;
+    border: 2px solid #efd478;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    border-radius: 15px;
+  }
+
+  &--red {
+    border: 2px solid $color-address;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    border-radius: 15.7808px;
+  }
+}
+
+.buynow__box {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+
+  transform: translate(-50%, -40%);
+
+  width: 132px;
+  height: 132px;
+
+  border-radius: 50%;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 132px;
+    height: 132px;
+    transform: translateY(-7px);
+    background-image: url(../images/modal-about_product/img@1x.png);
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/modal-about_product/img@2x.png);
+      transform: translateY(-11px);
+
+      width: 132px;
+      height: 132px;
+      background-size: cover;
+
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      @include mq(tablet) {
+        .products__item:hover & {
+          transform: translateY(0px);
+        }
+      }
+    }
+  }
+
+  &--green {
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+
+    &::before {
+      background-image: url(../images/buy_now/ice1x.png);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/buy_now/ice2x.png);
+      }
+    }
+  }
+
+  &--yellow {
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+
+    &::before {
+      background-image: url(../images/buy_now/coffee1x.png);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/buy_now/coffee2x.png);
+      }
+    }
+  }
+
+  &--coral {
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+
+    &::before {
+      background-image: url(../images/buy_now/msh1x.png);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/buy_now/msh2x.png);
+      }
+    }
+  }
+}
+
+.buynow__name {
+  width: 106px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.buynow__label {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.buynow__input {
+  width: 100%;
+  height: 32px;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid $primary-bgc;
+  border-radius: 10px;
+
+  @include mq(tablet) {
+    max-width: 368px;
+    height: 42px;
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: $secondary;
+  }
+}
+
+.buynow__comment {
+  width: 100%;
+  height: 64px;
+  padding: 8px 12px;
+  margin-bottom: 26px;
+
+  resize: none;
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid $primary-bgc;
+  border-radius: 10px;
+
+  @include mq(tablet) {
+    height: 84px;
+    max-width: 368px;
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: $secondary;
+  }
+}
