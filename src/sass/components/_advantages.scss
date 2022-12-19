@@ -97,7 +97,6 @@ text-align: center;
 letter-spacing: 0.04em;
 color: #FCFCFC;
   @media screen and (max-width: 767px) {
-    margin-bottom: 16px;
     font-size: 36px;
     line-height: 44px;
     text-transform: uppercase;
@@ -106,14 +105,12 @@ color: #FCFCFC;
    @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 0.81;
-    margin-bottom: 12px;;
+    
    }
 
    @media screen and (min-width: 1200px) {
-    margin-bottom: 12px;
     font-size: 58px;
     line-height: 0.81;
-    margin-bottom: 12px;;
    }
 }
 .advantages-text {
@@ -125,18 +122,20 @@ color: #FCFCFC;
     color: #FCFCFC;
     @media screen and (max-width: 767px) {
         font-weight: 700;
-font-size: 12px;
-line-height: 1.7;
+        font-size: 12px;
+        line-height: 1.7;
+        margin-top: 16px;
        }
        
        @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 1.74;
+        margin-top: 12px;
        }
     
        @media screen and (min-width: 1200px) {
         font-size: 16px;
         line-height: 1.76;
-    
+        margin-top: 12px;
        }
 }
