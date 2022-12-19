@@ -13,7 +13,7 @@ $('.gallery__slider').slick({
     arrows: false, // не показувати стрілки
     dots: false, //  показувати точки індикатори
     dotsClass:'slick-dots', // назва класу для точок
-    ade: fade,
+    ade: true,
     cssEase: 'linear',
     autoplay: true,
     autoplaySpeed: 3000,
