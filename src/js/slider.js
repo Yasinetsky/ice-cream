@@ -12,8 +12,8 @@ $('.gallery__slider').slick({
     touchMove: true,
     arrows: false, // не показувати стрілки
     dots: false, //  показувати точки індикатори
-    dotsClass:'slick-dots', // назва класу для точок
-    ade: true,
+    dotsClass: 'slick-dots', // назва класу для точок
+    fade: true,
     cssEase: 'linear',
     autoplay: true,
     autoplaySpeed: 3000,
