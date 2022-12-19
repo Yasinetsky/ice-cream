@@ -20,6 +20,7 @@
 
   /*  Центрируем и задаем z-index */
   position: fixed;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 49; /* Должен быть выше чем у подложки*/

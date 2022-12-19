@@ -1,4 +1,4 @@
-.header_button {
+.header__button {
   background-color: #f8d24e;
   border-radius: 10px;
   font-weight: 600;
@@ -36,20 +36,21 @@
   }
 }
 
-.button_svg {
+.button__svg {
   margin-left: 4px;
   fill: #000000;
+  transition: fill .5s ease-in-out, color .5s ease-in-out;
 
   &:focus {
     fill: #ffffff;
   }
-  .header_button:focus > & {
+  .header__button:focus > & {
     fill: #ffffff;
   }
 }
 
 //mobile-menu-button
-.menu_button {
+.menu__button {
   background-color: #f8d24e;
   border-radius: 10px;
   font-weight: 600;
@@ -88,7 +89,7 @@
       fill: #000000;
     }
 }
-.menu_btn_svg {
+.menu__btn__svg {
   margin-left: 4px;
   fill: #000000;
 
