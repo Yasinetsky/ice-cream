@@ -11,6 +11,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color .5s ease-in-out, color .5s ease-in-out;
+  
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -33,6 +35,7 @@
     }
   }
 }
+
 .button_svg {
   margin-left: 4px;
   fill: #000000;
@@ -61,6 +64,7 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  transition: background-color .5s ease-in-out, color .5s ease-in-out;
 
   @media screen and (min-width: 768px) {
     display: none;
