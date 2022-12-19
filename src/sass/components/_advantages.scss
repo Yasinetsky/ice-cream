@@ -90,7 +90,6 @@
   
 }
 .advantages-title {
- margin-bottom: 12px;
 font-weight: 700;
 font-size: 58px;
 line-height: 0.81;
@@ -98,7 +97,7 @@ text-align: center;
 letter-spacing: 0.04em;
 color: #FCFCFC;
   @media screen and (max-width: 767px) {
-    margin-bottom: 16px;
+    padding-bottom: 16px;
     font-size: 36px;
     line-height: 44px;
     text-transform: uppercase;
@@ -107,12 +106,14 @@ color: #FCFCFC;
    @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 0.81;
+    padding-bottom: 12px;
    }
 
    @media screen and (min-width: 1200px) {
     margin-bottom: 12px;
     font-size: 58px;
     line-height: 0.81;
+    padding-bottom: 12px;
    }
 }
 .advantages-text {
