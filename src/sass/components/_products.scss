@@ -163,7 +163,24 @@
     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 
     &::before {
-      background-image: url(../images/products/img_1.jpg);
+      background-image: url(../images/products/img_1_sm@1x.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/img_1_sm@2x.jpg);
+      }
+
+      // desktop screen
+      @media screen and (min-width: 769px) {
+        background-image: url(../images/products/img_1_lg@1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/products/img_1_lg@2x.jpg);
+        }
+      }
     }
   }
 
@@ -177,7 +194,24 @@
     box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 
     &::before {
-      background-image: url(../images/products/img_2.jpg);
+      background-image: url(../images/products/img_2_sm@1x.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/img_2_sm@2x.jpg);
+      }
+
+      // desktop screen
+      @media screen and (min-width: 769px) {
+        background-image: url(../images/products/img_2_lg@1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/products/img_2_lg@2x.jpg);
+        }
+      }
     }
   }
 
@@ -191,7 +225,24 @@
     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 
     &::before {
-      background-image: url(../images/products/img_3.jpg);
+      background-image: url(../images/products/img_3_sm@1x.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/img_3_sm@2x.jpg);
+      }
+
+      // desktop screen
+      @media screen and (min-width: 769px) {
+        background-image: url(../images/products/img_3_lg@1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/products/img_3_lg@2x.jpg);
+        }
+      }
     }
   }
 }
@@ -235,4 +286,6 @@
 .product__button {
   width: 40px;
   height: 16px;
+  background-color: transparent;
+  border:none;
 }

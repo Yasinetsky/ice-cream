@@ -1,4 +1,4 @@
-const button = document.querySelector('#locations');
+const button = document.querySelector('#how_its_made');
 
 const disableButton = () => {
     button.disabled = true;
