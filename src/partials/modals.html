@@ -1,0 +1,228 @@
+<!-- modal about product -->
+<div class="overlay js-overlay-modal"></div>
+<div id="about-product_mod" class="modal-product modal" data-modal="2">
+    <button class="modal-product__button js-modal-close">
+        <svg class="modal-product__icon modal-product__icon--small" width="20" height="20">
+            <use href="./images/icon-project.svg#icon-close-line"></use>
+        </svg>
+        <svg class="modal-product__icon modal-product__icon--big" width="24" height="24">
+            <use href="./images/icon-project.svg#icon-close-line"></use>
+        </svg>
+    </button>
+
+    <h2 class="modal-product__name">Chololate icecream</h2>
+
+    <div class="modal-product__picture"></div>
+
+    <ul class="modal-components">
+        <li class="modal-components__item">
+            <div class="modal-components__ellipse">
+                <div class="modal-components__circle">
+                    <span class="modal-components__number">320</span>
+                </div>
+                <p class="modal-components__text">kcal</p>
+            </div>
+        </li>
+        <li class="modal-components__item">
+            <div class="modal-components__ellipse">
+                <div class="modal-components__circle">
+                    <span class="modal-components__number">4g</span>
+                </div>
+                <p class="modal-components__text">Prote...</p>
+            </div>
+        </li>
+        <li class="modal-components__item">
+            <div class="modal-components__ellipse">
+                <div class="modal-components__circle">
+                    <span class="modal-components__number">8,2g</span>
+                </div>
+                <p class="modal-components__text">Fats</p>
+            </div>
+        </li>
+        <li class="modal-components__item">
+            <div class="modal-components__ellipse">
+                <div class="modal-components__circle">
+                    <span class="modal-components__number">40,4g</span>
+                </div>
+                <p class="modal-components__text">Carbs</p>
+            </div>
+        </li>
+    </ul>
+
+    <h3 class="modal-product__title">Ingredients</h3>
+
+    <ul class="modal-ingridients">
+        <li class="modal-ingridients__item">
+            <span class="modal-ingridients__label">Milk</span>100ml
+        </li>
+        <li class="modal-ingridients__item">
+            <span class="modal-ingridients__label">Belgian chocolate</span>20g
+        </li>
+        <li class="modal-ingridients__item">
+            <span class="modal-ingridients__label">Cream</span>150 ml
+        </li>
+        <li class="modal-ingridients__item">
+            <span class="modal-ingridients__label">Cocoa powder</span> 30g
+        </li>
+        <li class="modal-ingridients__item">
+            <span class="modal-ingridients__label">Sugar</span>40g
+        </li>
+        <li class="modal-ingridients__item">
+            <span class="modal-ingridients__label">Vanilla sugar</span>10g
+        </li>
+    </ul>
+
+    <form class="product-form" name="product-form" autocomplete="on">
+        <label class="product-form__label">
+            <input class="product-form__input" type="text" name="product-form__name" placeholder="Name" />
+        </label>
+
+        <label class="product-form__label">
+            <input class="product-form__input" type="tel" name="product-form__tel" placeholder="Phone" />
+        </label>
+
+        <label class="product-form__label">
+            <textarea class="product-form__comment " name="product-form__comment" placeholder="Comment"></textarea>
+        </label>
+
+        <button id="product-form__btn" class="product-form__btn" type="submit">Submit</button>
+    </form>
+</div>
+
+<div class="overlay js-overlay-modal"></div>
+<!-- Buy now -->
+<div class="buynow__modal modal" data-modal="1">
+    <button class="buynow__btn--close modal__cross js-modal-close" type="button">
+        <svg class="buynow__icon" width="24" height="24">
+            <use href="./images/icon-project.svg#icon-close-line"></use>
+        </svg>
+    </button>
+    <p class="buynow__title">Buy now</p>
+    <ul class="buynow__list">
+        <li class="buynow__type buynow__type--green">
+            <div class="buynow__box buynow__box--green"></div>
+            <p class="buynow__name">ice cream</p>
+        </li>
+        <li class="buynow__type buynow__type--yellow">
+            <div class="buynow__box buynow__box--yellow"></div>
+            <p class="buynow__name">ice coffee</p>
+        </li>
+        <li class="buynow__type buynow__type--red">
+            <div class="buynow__box buynow__box--coral"></div>
+            <p class="buynow__name">milkshake</p>
+        </li>
+    </ul>
+    <form name="buynow-form" autocomplete="on">
+        <div class="buynow-form">
+            <label class="buynow__label">
+                <input class="buynow__input" type="text" name="buynow-name" placeholder="Name" />
+            </label>
+
+            <label class="buynow__label">
+                <input class="buynow__input" type="tel" name="buynow-tel" placeholder="Phone" />
+            </label>
+
+            <label class="buynow__label">
+                <textarea class="buynow__comment " name="comment" placeholder="Comment"></textarea>
+            </label>
+
+            <button class="buynow__btn" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+<!--Modal-video-->
+<!-- <div class="overlay js-overlay-modal"></div> -->
+<div class="read__modal modal" data-modal="3">
+    <button class="read__btn--close modal__cross js-modal-close" type="button">
+        <svg class="close_btn-icon" width="24" height="24">
+            <use href="./images/icon-project.svg#icon-close-line"></use>
+        </svg>
+    </button>
+    <div class="read__form">
+        <h3 class="read__title">How it’s made?</h3>
+        <iframe src="https://www.youtube.com/embed/uoBjfnm4JJQ" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <p class="read__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt
+            ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut
+            labore et</p>
+    </div>
+</div>
+
+
+
+<!-- franchise -->
+
+<!-- <div class="modal__backdrop"> -->
+<div class="modal__franchise  modal" data-modal="5">
+    <button class="franchise__btn-close  modal__cross js-modal-close" type="button">
+        <svg class="franchise__icon" width="20" height="20">
+            <use href="./images/icon-project.svg#icon-close-line"></use>
+        </svg>
+    </button>
+
+    <div class="franchise__form">
+        <div class="franchise__title-item">
+            <p class="franchise__title">
+                Thank you for your interest in owning an Ice Cream shop
+            </p>
+            <p class="franchise__paragraf">
+                Due to the overwhelming volume of franchise requests we are not
+                accepting new franchisee applications at this time. Once the
+                application process resumes, we will contact you for further
+                information. Please fill out the contact information below and we will
+                reach out for additional information. We appreciate your patience.
+            </p>
+        </div>
+
+        <div class="">
+            <form name="franchise-form" autocomplete="on" novalidate>
+                <div class="franchise-form">
+                    <label class="franchise__label">
+                        <input class="franchise__input" type="text" name="franchise-username" placeholder="Name" />
+                    </label>
+
+                    <label class="franchise__label">
+                        <input class="franchise__input" type="tel" name="franchise-tel" placeholder="Phone" />
+                    </label>
+
+                    <label class="franchise__label">
+                        <input class="franchise__input" type="email" name="franchise-mail" placeholder="Email" />
+                    </label>
+
+                    <label class="franchise__label">
+                        <textarea class="franchise__input franchise__input--comment" name="comment"
+                            placeholder="Comment"></textarea>
+                    </label>
+
+                    <button class="franchise__btn" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal map-->
+<div class="modal__map  modal" data-modal="4">
+    <button class="map__close  modal__cross js-modal-close" type="button">
+        <svg class="map__icon" width="20" height="20">
+            <use href="./images/icon-project.svg#icon-close-line"></use>
+        </svg>
+    </button>
+
+    <p class="map__title">Our Locations</p>
+
+    <iframe class="map__content"
+        src="https://www.google.com/maps/d/u/0/embed?mid=1IDw6FH0KBLklcVCPopP_sGemHZIGEHQ&ehbc=2E312F"></iframe>
+
+    <div class="map__link">
+        <a class="map__open"
+            href="https://www.google.com/maps/d/u/0/edit?mid=1IDw6FH0KBLklcVCPopP_sGemHZIGEHQ&usp=sharing"
+            target="_blank">Open map</a>
+    </div>
+</div>
