@@ -50,7 +50,7 @@
             
 
 }
-.benefits_iten {
+.benefits__iten {
     width: 100%;
     align-items: center;
             @media screen and (max-width: 767px) {
@@ -66,7 +66,7 @@
         
             }
 }
-.benefits_svg {
+.benefits__svg {
     width: 50px;
     height: 50px;
     margin: 0 auto;
@@ -89,7 +89,7 @@
        }
   
 }
-.benefits_title {
+.benefits__title {
 font-weight: 700;
 font-size: 58px;
 line-height: 0.81;
@@ -101,22 +101,22 @@ display: block;
     font-size: 36px;
     line-height: 44px;
     text-transform: uppercase;
-    margin-bottom: 16px;
+    margin-bottom: 25px;
    }
    
    @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 0.81;
-    margin-bottom: 12px;
+    margin-bottom: 27px;
    }
 
    @media screen and (min-width: 1200px) {
     font-size: 58px;
     line-height: 0.81;
-    margin-bottom: 12px;
+    margin-bottom: 27px;
    }
 }
-.benefits_text {
+.benefits__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 176%;
