@@ -1,0 +1,159 @@
+.modal__franchise {
+  width: 95%;
+  max-width: 450px;
+  padding: 28px 28px;
+
+  background-color: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  position: relative;
+  opacity: 1;
+
+  margin: auto;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and(min-width: 768px) {
+    min-width: 568px;
+    padding: 32px 60px;
+  }
+}
+
+.franchise__btn-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  color: #131313;
+  fill: #131313;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  top: 8px;
+  right: 8px;
+
+  @media screen and(min-width: 768px) {
+    top: 20px;
+    right: 20px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.franchise__icon {
+  fill: #131313;
+  color: #131313;
+}
+
+.franchise__title-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+
+  @media screen and(min-width: 768px) {
+    gap: 24px;
+  }
+}
+
+.franchise__title {
+  width: 322px;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #131313;
+
+  @media screen and(min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.franchise__paragraf {
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #131313;
+
+  @media screen and(min-width: 768px) {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+}
+
+.franchise-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+
+  @media screen and(min-width: 768px) {
+    gap: 16px;
+  }
+}
+
+.franchise__label {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.franchise__input {
+  width: 100%;
+  height: 32px;
+  padding: 8px 12px;
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+
+  @media screen and(min-width: 768px) {
+    max-width: 368px;
+    height: 42px;
+  }
+
+  &--comment {
+    height: 64px;
+
+    @media screen and(min-width: 768px) {
+      height: 84px;
+    }
+  }
+}
+
+.franchise__btn {
+  margin-top: 12px;
+  min-width: 114px;
+  height: 42px;
+  padding: 12px 34px;
+  background-color: #f8d24e;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #131313;
+
+  @media screen and(min-width: 768px) {
+    margin-top: 16px;
+    min-width: 121px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  &:hover {
+    background-color: #0a8817;
+  }
+
+  &:focus {
+    background-color: #0a8817;
+    color: #fcfcfc;
+  }
+}
