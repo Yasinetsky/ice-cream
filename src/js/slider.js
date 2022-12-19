@@ -8,8 +8,10 @@ dotsClass: 'slick-dots', // назва класу для точок
 $('.gallery__slider').slick({
     touchMove: true,
 autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 3000,
     arrows: false, // не показувати стрілки
 dots: false, // показувати точки індикатори
-dotsClass: 'slick-dots', // назва класу для точок
+    dotsClass: 'slick-dots', // назва класу для точок
+ade: true,
+cssEase: 'linear',
 });
