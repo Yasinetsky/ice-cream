@@ -1,3 +1,7 @@
+.reviews {
+  margin-bottom: 220px;
+}
+
 .slideshow__item {
   display: flex;
   flex-direction: column;
@@ -113,7 +117,7 @@
 }
 
 .slick-dots {
-  bottom: 20px;
+  bottom: 0px;
   text-align: center;
   display: flex; // поставити кнопки в ряд
   justify-content: center; // вирівняти по центру
