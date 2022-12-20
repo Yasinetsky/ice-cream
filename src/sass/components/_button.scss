@@ -92,11 +92,12 @@
 .menu__btn__svg {
   margin-left: 4px;
   fill: #000000;
+  transition: fill .5s ease-in-out, color .5s ease-in-out;
 
   &:focus {
     fill: #ffffff;
   }
-  .menu_button:focus > & {
+  .menu__button:focus > & {
     fill: #ffffff;
   }
 }
