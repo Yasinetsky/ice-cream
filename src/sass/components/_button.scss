@@ -217,6 +217,36 @@
   }
 }
 
+// modal about product
+.product-form__btn {
+  min-width: 132px;
+  height: 42px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: $accent-color;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: $secondary;
+  border: none;
+
+  @include mq(tablet) {
+    min-width: 121px;
+  }
+
+  &:hover {
+    background: #0A8817;
+  }
+  &:focus {
+    color: #FFFFFF;
+    background: #0A8817;
+  }
+}
 // Franchise button
 
 .franchise__btn-close {
