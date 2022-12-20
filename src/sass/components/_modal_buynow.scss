@@ -29,6 +29,17 @@
   border-radius: 10px;
 }
 
+.buynow__icon{
+  @include mq(tablet, max) {
+    width: 20px;
+    height: 20px;
+  }
+  @include mq(tablet) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .buynow__title {
   font-family: 'Seymour One';
   font-weight: 400;
