@@ -4,29 +4,26 @@
     @media screen and (max-width: 767px) {
         padding-left: 45px;
         padding-right: 45px;;
-        padding-top: 60px;
-        padding-bottom: 32px;
+        padding-bottom: 64px;
         }
         
         @media screen and (min-width: 768px) {
         padding-left: 16px;
         padding-right: 16px;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 204px;
         }
     
 
         @media screen and (min-width: 1200px) {
             padding-left: 16px;
             padding-right: 16px;;
-            padding-top: 60px;
-            padding-bottom: 60px;
+            padding-bottom: 178px;
         }
 }
 
 
 
-.advantages-list {
+.benefits {
     display: flex;
     text-align: center;
     @media screen and (max-width: 767px) {
@@ -49,12 +46,11 @@
                @media screen and (min-width: 1200px) {
                 gap: 32px;
               
-           
                }            
             
 
 }
-.advantages-iten {
+.benefits__iten {
     width: 100%;
     align-items: center;
             @media screen and (max-width: 767px) {
@@ -70,7 +66,7 @@
         
             }
 }
-.advetages-svg {
+.benefits__svg {
     width: 50px;
     height: 50px;
     margin: 0 auto;
@@ -93,33 +89,34 @@
        }
   
 }
-.advantages-title {
- margin-bottom: 12px;
+.benefits__title {
 font-weight: 700;
 font-size: 58px;
 line-height: 0.81;
 text-align: center;
 letter-spacing: 0.04em;
 color: #FCFCFC;
+display: block;
   @media screen and (max-width: 767px) {
-    margin-bottom: 16px;
     font-size: 36px;
     line-height: 44px;
     text-transform: uppercase;
+    margin-bottom: 25px;
    }
    
    @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 0.81;
+    margin-bottom: 27px;
    }
 
    @media screen and (min-width: 1200px) {
-    margin-bottom: 12px;
     font-size: 58px;
     line-height: 0.81;
+    margin-bottom: 27px;
    }
 }
-.advantages-text {
+.benefits__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 176%;
@@ -128,8 +125,8 @@ color: #FCFCFC;
     color: #FCFCFC;
     @media screen and (max-width: 767px) {
         font-weight: 700;
-font-size: 12px;
-line-height: 1.7;
+        font-size: 12px;
+        line-height: 1.7;
        }
        
        @media screen and (min-width: 768px) {
@@ -140,6 +137,5 @@ line-height: 1.7;
        @media screen and (min-width: 1200px) {
         font-size: 16px;
         line-height: 1.76;
-    
        }
 }
