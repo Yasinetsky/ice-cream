@@ -14,6 +14,7 @@
 
   min-width: 280px;
   min-height: 644px;
+  overflow: auto;
 
   transition: transform 250ms var(--cubic-bezier);
   @include mq(tablet, max) {
