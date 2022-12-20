@@ -1,10 +1,23 @@
 .buynow__modal {
-  @include mq(desktop, max) {
-    position: absolute;
+  @include mq(tablet, max) {
+    position: fixed;
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%) translateY(300px);
+    padding: 26px;
   }
+
+  @include mq(tablet) {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(50px);
+
+    padding: 30px 52px;
+
+    min-width: 568px;
+  }
+
   @include mq(desktop) {
     position: fixed;
     top: 50%;
@@ -15,14 +28,7 @@
   min-width: 280px;
   min-height: 644px;
 
-  transition: transform 250ms var(--cubic-bezier);
-  @include mq(tablet, max) {
-    padding: 26px;
-  }
-  @include mq(tablet) {
-    min-width: 568px;
-    padding: 30px 52px;
-  }
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   background-color: $primary-color;
   border: 2px solid $accent-color;
@@ -64,11 +70,13 @@
     justify-content: center;
     align-items: center;
     gap: 83px;
+
     margin-bottom: 32px;
   }
 
   @include mq(tablet) {
     gap: 32px;
+    
     margin-bottom: 40px;
   }
 }
