@@ -22,7 +22,7 @@
   border: 2px solid $accent-color;
   border-radius: 10px;
   transition: transform 250ms var(--cubic-bezier);
-  padding: 28px;
+  padding: 26px;
   
   
   @include mq(mobile) {
@@ -33,7 +33,7 @@
   @include mq(tablet) {
     min-width: 568px;
     min-height: 449px;
-    padding: 32px 60px;
+    padding: 30px 58px;
   }
 
   @include mq(desktop, max) {
