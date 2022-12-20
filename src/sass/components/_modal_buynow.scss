@@ -1,28 +1,27 @@
 .buynow__modal {
   @include mq(desktop, max) {
     position: absolute;
-    top: 80px;
+    top:50%;
     left: 50%;
-    transform: translate(-50%) scale(1);
+    transform: translate(-50%, -50%) translateY(300px);
   }
   @include mq(desktop) {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%);
   }
 
   min-width: 280px;
   min-height: 644px;
-  overflow: auto;
 
   transition: transform 250ms var(--cubic-bezier);
   @include mq(tablet, max) {
-    padding: 28px;
+    padding: 26px;
   }
   @include mq(tablet) {
     min-width: 568px;
-    padding: 32px 54px;
+    padding: 30px 52px;
   }
 
   background-color: $primary-color;
@@ -69,7 +68,7 @@
   }
 
   @include mq(tablet) {
-    gap: 30px;
+    gap: 32px;
     margin-bottom: 40px;
   }
 }
@@ -77,11 +76,11 @@
 .buynow__type {
   position: relative;
 
-  padding: 0 16px;
-  padding-top: 96px;
-  padding-bottom: 20px;
+  padding: 0 11px;
+  padding-top: 94px;
+  padding-bottom: 18px;
 
-  min-width: 136px;
+  width: 132px;
   height: 135px;
 
   &--green {
