@@ -249,3 +249,53 @@
     width: 463px;
   }
 }
+
+// about btn
+
+.about_button {
+  margin: 0 auto;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: #000000;
+  border: none;
+  width: 164px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+  &:hover {
+    background-color: #0a8817;
+  }
+  &:focus {
+    color: #ffffff;
+    background-color: #0a8817;
+  }
+
+  &:disabled {
+    background-color: #ababab;
+    color: #000000;
+  }
+
+  @include mq(tablet) {
+    margin: 0;
+  }
+}
+.button_svg {
+  margin-left: 4px;
+  fill: #000000;
+
+  &:focus {
+    fill: #ffffff;
+  }
+  .about_button:focus > & {
+    fill: #ffffff;
+  }
+  transition: fill 0.5s ease-in-out;
+}
