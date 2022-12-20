@@ -1,7 +1,7 @@
 .header{
     background-color:#84A178;
 }
-.header_container{
+.header__container{
   display: flex;
   justify-content: space-between;
   padding-top: 12px;
@@ -16,20 +16,20 @@
     justify-content: space-between;
   }
 }
-.header_logo{
+.header__logo{
   padding: 0;
 }
-.header_nav{
+.header__nav{
     @media screen and (max-width:1199px){
       display: none;
     }
 }
-.header_set{
+.header__set{
   display:flex;
   gap: 28px;
 }
 
-.header_item{
+.header__item{
   transition: color 0.25s ease-in-out 0s;
 
   &:not(:last-child){
@@ -70,13 +70,13 @@
     color: #FCFCFC;
   }
 }
-.header_item .list:hover,
-.header_item .list:focus{
+.header__item .list:hover,
+.header__item .list:focus{
   color: #F8D24E;
 }
 
 //mobile menu
-.menu-toggle {
+.menu__toggle {
     min-height: 40px;
     min-width: 40px;
     display: flex;
@@ -99,7 +99,7 @@
       display: none;
     }
   }
-  .menu-toggle-first{
+  .menu__toggle--first{
     min-height: 40px;
     min-width: 40px;
     display: flex;
@@ -121,12 +121,12 @@
     }
   }
   
-  .menu-toggle:hover,
-  .menu-toggle:focus {
+  .menu__toggle:hover,
+  .menu__toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
   }
   
-  .menu-container {
+  .menu__container {
     position: fixed;
     top: 0;
     left: 0;
@@ -134,7 +134,7 @@
     height: 100vh;
     padding: 12px 20px 0 32px;
     background-color: #85A279;
-    z-index: 999;
+    z-index: 29;
     overflow-y: scroll;
    
     transform: translateX(100%);
@@ -145,17 +145,17 @@
     }
   }
   
-  .menu-container.is-open {
+  .menu__container.is-open {
     transform: translateX(0);
   }
   
-  .menu-container .menu-toggle {
+  .menu__container .menu__toggle {
     position: absolute;
     top: 16px;
     right: 16px;
     color: #fff;
   }
-  .mobi_list{
+  .mobi__list{
     font-weight: 700;
     font-size: 32px;
     line-height: 1.2;
@@ -171,10 +171,10 @@
     line-height: 1.22;
   }
 }
-.menu_svg{
+.menu__svg{
   fill: #FCFCFC;
 }
-  .mobile-menu {
+.mobile__menu {
     padding-top: 51px;
     margin: 0;
     list-style: none;

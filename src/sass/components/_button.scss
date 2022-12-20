@@ -1,9 +1,9 @@
-.btn{
-  transition: all 500ms ease-in-out,;
+.btn {
+  transition: all 500ms ease-in-out;
   cursor: pointer;
 }
 
-.header_button {
+.header__button {
   background-color: #f8d24e;
   border-radius: 10px;
   font-weight: 600;
@@ -16,8 +16,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color .5s ease-in-out, color .5s ease-in-out;
-  
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -33,28 +33,29 @@
   &:disabled {
     background-color: #ababab;
     color: #000000;
-    &:disabled{
-      background-color:#ABABAB;
-      color:#000000;
-      fill:#000000;
+    &:disabled {
+      background-color: #ababab;
+      color: #000000;
+      fill: #000000;
     }
   }
 }
 
-.button_svg {
+.button__svg {
   margin-left: 4px;
   fill: #000000;
+  transition: fill 0.5s ease-in-out, color 0.5s ease-in-out;
 
   &:focus {
     fill: #ffffff;
   }
-  .header_button:focus > & {
+  .header__button:focus > & {
     fill: #ffffff;
   }
 }
 
 //mobile-menu-button
-.menu_button {
+.menu__button {
   background-color: #f8d24e;
   border-radius: 10px;
   font-weight: 600;
@@ -69,7 +70,7 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  transition: background-color .5s ease-in-out, color .5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -87,20 +88,21 @@
     background-color: #ababab;
     color: #000000;
   }
-    &:disabled{
-      background-color:#ABABAB;
-      color:#000000;
-      fill: #000000;
-    }
+  &:disabled {
+    background-color: #ababab;
+    color: #000000;
+    fill: #000000;
+  }
 }
-.menu_btn_svg {
+.menu__btn__svg {
   margin-left: 4px;
   fill: #000000;
+  transition: fill 0.5s ease-in-out, color 0.5s ease-in-out;
 
   &:focus {
     fill: #ffffff;
   }
-  .menu_button:focus > & {
+  .menu__button:focus > & {
     fill: #ffffff;
   }
 }
@@ -115,6 +117,8 @@
 
   background-color: transparent;
   border: none;
+
+  cursor: pointer;
 }
 
 .buynow__btn {
@@ -159,7 +163,6 @@
   }
 }
 // buynow__btn
-
 
 //read-video__btn
 
@@ -242,5 +245,52 @@
   &:focus {
     color: #FFFFFF;
     background: #0A8817;
+  }
+}
+// Franchise button
+
+.franchise__btn-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.franchise-form__btn {
+  margin-top: 12px;
+  min-width: 114px;
+
+  height: 42px;
+  padding: 12px 34px;
+
+  background-color: $accent-color;
+  border-color: transparent;
+  border-radius: 10px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  color: $secondary;
+
+  @media screen and(min-width: 768px) {
+    margin-top: 16px;
+    min-width: 121px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  &:hover {
+    background-color: $hov-foc;
+  }
+
+  &:focus {
+    background-color: $hov-foc;
+    color: $primary-color;
   }
 }
