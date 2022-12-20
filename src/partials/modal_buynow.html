@@ -23,18 +23,18 @@
         <form name="buynow-form" autocomplete="on">
             <div class="buynow-form">
                 <label class="buynow__label">
-                    <input class="buynow__input" type="text" name="buynow-name" placeholder="Name" />
+                    <input class="buynow__input" type="text" name="buynow-name" placeholder="Name" required />
                 </label>
 
                 <label class="buynow__label">
-                    <input class="buynow__input" type="tel" name="buynow-tel" placeholder="Phone" />
+                    <input class="buynow__input" type="tel" name="buynow-tel" placeholder="Phone" required/>
                 </label>
 
                 <label class="buynow__label">
                     <textarea class="buynow__comment" name="comment" placeholder="Comment"></textarea>
                 </label>
 
-                <button class="buynow__btn" type="submit">Submit</button>
+                <button class="buynow__btn btn" type="submit" aria-required="false">Submit</button>
             </div>
         </form>
     </div>
