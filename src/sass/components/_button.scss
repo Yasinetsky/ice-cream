@@ -1,5 +1,5 @@
-.btn{
-  transition: all 500ms ease-in-out,;
+.btn {
+  transition: all 500ms ease-in-out;
   cursor: pointer;
 }
 
@@ -16,8 +16,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color .5s ease-in-out, color .5s ease-in-out;
-  
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -33,10 +33,10 @@
   &:disabled {
     background-color: #ababab;
     color: #000000;
-    &:disabled{
-      background-color:#ABABAB;
-      color:#000000;
-      fill:#000000;
+    &:disabled {
+      background-color: #ababab;
+      color: #000000;
+      fill: #000000;
     }
   }
 }
@@ -69,7 +69,7 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  transition: background-color .5s ease-in-out, color .5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -87,11 +87,11 @@
     background-color: #ababab;
     color: #000000;
   }
-    &:disabled{
-      background-color:#ABABAB;
-      color:#000000;
-      fill: #000000;
-    }
+  &:disabled {
+    background-color: #ababab;
+    color: #000000;
+    fill: #000000;
+  }
 }
 .menu_btn_svg {
   margin-left: 4px;
@@ -160,6 +160,55 @@
 }
 // buynow__btn
 
+// about btn
+
+.about_button {
+  margin: 0 auto;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: #000000;
+  border: none;
+  width: 164px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+  &:hover {
+    background-color: #0a8817;
+  }
+  &:focus {
+    color: #ffffff;
+    background-color: #0a8817;
+  }
+
+  &:disabled {
+    background-color: #ababab;
+    color: #000000;
+  }
+
+  @include mq(tablet) {
+    margin: 0;
+  }
+}
+.button_svg {
+  margin-left: 4px;
+  fill: #000000;
+
+  &:focus {
+    fill: #ffffff;
+  }
+  .about_button:focus > & {
+    fill: #ffffff;
+  }
+  transition: fill 0.5s ease-in-out;
+}
 
 //read-video__btn
 
