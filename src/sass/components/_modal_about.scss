@@ -9,16 +9,20 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   border: 2px solid $accent-color;
-  @include mq(desktop, max) {
-    top: 80px;
-    left: 50%;
-    transform: translate(-50%) scale(1);
-  }
-  @include mq(desktop) {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%) scale(1);
-  }
+  // @include mq(desktop, max) {
+  //   top: 80px;
+  //   left: 50%;
+  //   transform: translate(-50%) scale(1);
+  // }
+  // @include mq(desktop) {
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, 50%) scale(1);
+  // }
+
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%) scale(1);
 
   @include mq(tablet) {
     width: 568px;
