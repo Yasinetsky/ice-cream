@@ -12,7 +12,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transform: translateY(100);
 
   margin: auto;
 
@@ -22,12 +21,10 @@
   @include mq('tablet', 'min') {
     min-width: 568px;
     padding: 32px 60px;
-    transform: translate(-50%, -50%);
   }
 
   @include mq('desktop', 'min') {
     max-width: 568px;
-    transform: translate(-50%, -50%);
   }
 }
 
