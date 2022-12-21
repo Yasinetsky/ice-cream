@@ -1,3 +1,7 @@
+.reviews {
+  margin-bottom: 490px;
+}
+
 .slideshow__item {
   display: flex;
   flex-direction: column;
@@ -51,15 +55,10 @@
   color: $secondary;
 }
 
-.slick-dotted.slick-slider {
-  margin-bottom: 400px;
-}
-
 @include mq('tablet', 'min') {
-  .slick-dotted.slick-slider {
-    margin-bottom: 350px;
+  .reviews {
+    margin-bottom: 430px;
   }
-
   .slideshow__text {
     max-width: 705px;
     height: 138px;
@@ -83,8 +82,8 @@
 }
 
 @include mq('desktop', 'min') {
-  .slick-dotted.slick-slider {
-    margin-bottom: 200px;
+  .reviews {
+    margin-bottom: 260px;
   }
 
   .slideshow__text {
@@ -113,7 +112,7 @@
 }
 
 .slick-dots {
-  bottom: 20px;
+  bottom: 0px;
   text-align: center;
   display: flex; // поставити кнопки в ряд
   justify-content: center; // вирівняти по центру

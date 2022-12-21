@@ -1,9 +1,15 @@
 body {
   margin: 0;
-
+  padding-top: 52px;
   font-family: 'Montserrat', sans-serif;
-
   background-image: url(../images/body_bg/bg_p1x.jpg);
+
+  @include mq(tablet) {
+    padding-top: 65px;
+  }
+  @include mq(desktop) {
+    padding-top: 73px;
+  }
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
