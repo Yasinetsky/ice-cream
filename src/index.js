@@ -1,4 +1,10 @@
+import './js/button-more-info';
 import './js/mobile-menu';
 import './js/slider';
 import './js/modal';
-import './js/header-scroll';
+import './js/disable_bn';
+import './js/disable_rm';
+import './js/disable_pr';
+import './js/disable_ol';
+import './js/disable_him';
+import './js/disable_fr';

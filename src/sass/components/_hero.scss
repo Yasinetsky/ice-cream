@@ -1,7 +1,6 @@
 .hero {
   height: 453px;
   background-color: #84a178;
-
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
@@ -73,13 +72,21 @@
   }
 }
 
-.buttons-hero {
+.hero__buttons {
   display: flex;
   align-items: center;
   gap: 12px;
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 12px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 39px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 122px;
+  }
 }
 
 .button-products {
@@ -189,9 +196,10 @@
 }
 
 .plate-image,
-.plate-image_text,
-.plate-image_description,
-.hero__icon-arrow {
+.plate-image__text,
+.plate-image__description,
+.hero__icon-arrow,
+#foo {
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -199,10 +207,11 @@
 
 .plate-image {
   position: absolute;
+  z-index: 1;
   left: 32px;
   top: 185px;
 
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.25s ease-in-out;
 
   @media screen and (min-width: 1200px) {
     position: absolute;
@@ -211,28 +220,34 @@
   }
 }
 
-.plate-image_description {
-  display: flex;
-  flex-direction: column;
+.button-more-info {
+  width: 40px;
+  height: 16px;
+  background-color: transparent;
+  border: none;
 }
 
-.plate-image_text {
+.button-more-info .hero__icon-arrow {
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.plate-image__text {
+  display: none;
   margin-left: 184px;
-  margin-top: 39px;
   margin-bottom: 12px;
   text-align: left;
   width: 139px;
   font-size: 12px;
   line-height: calc(17 / 12);
-  color: #fcfcfc;
+  color: $primary-color;
 
-  opacity: 0;
-
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
 
   @media screen and (min-width: 1200px) {
     margin-left: 241px;
-    margin-top: 122px;
     width: 200px;
     font-size: 14px;
     line-height: calc(20 / 14);
@@ -240,40 +255,42 @@
   }
 }
 
-.hero__icon-arrow {
-  margin-top: 0px;
-  margin-left: 184px;
-  fill: $primary-color;
-  scale: 0.84;
+.show {
+  display: block;
+}
 
-  transition: transform 0.5s ease-in-out;
+.hero__icon-arrow {
+  position: absolute;
+  top: 312px;
+  left: 32px;
+  margin-left: 184px;
+  display: inline-flex;
+  justify-content: center;
+
+  fill: $primary-color;
+
+  transition: fill 0.25s ease-in-out;
 
   @media screen and (min-width: 1200px) {
-    margin-left: 241px;
+    position: absolute;
+    left: 74px;
+    top: 475px;
   }
 }
-
-.more-info:hover .hero-main-image {
-  transform: scale(1.1);
-}
-.more-info:hover .plate-image {
-  transform: scale(1.1);
+#foo {
+  transition: transform 0.25s ease-in-out;
 }
 
-.more-info:hover .hero__icon-arrow {
-  transform: scale(1.2);
+.hero__icon-arrow.rotate {
+  transform: rotate(180deg);
 }
 
-.more-info:hover .plate-image_text {
-  opacity: 1;
-}
-
-.hero-main-image {
+.hero__main-image {
   position: absolute;
   top: 236px;
   left: 135px;
 
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.25s ease-in-out;
 
   @media screen and (min-width: 767px) {
     left: 408px;
@@ -285,10 +302,3 @@
     left: 652px;
   }
 }
-// .more-info {
-// transition: transform 0.5s ease-in-out;
-// }
-
-// .more-info:hover {
-//   transform: scale(1.07);
-// }
