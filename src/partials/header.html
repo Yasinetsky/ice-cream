@@ -1,4 +1,4 @@
-<header class="header" id="home">
+<header class="header" data-header id="home">
   <div class="header__container container">
     <img class="header__logo" srcset="./images/header/logo_40.png 40w, ./images/header/logo_48.png 48w, ./images/header/logo_60.png 60w, 
       ./images/header/logo_80.png 80w, ./images/header/logo_96.png 96w, ./images/header/logo_120.png 120w"
@@ -14,15 +14,15 @@
     </nav>
 
     <!--Mobile-menu-->
-    <button class="menu__toggle--first js-open-menu" aria-expanded="false" aria-controls="mobile__menu">
-      <svg class="menu__svg" width="32" height="32" fill="currentColor" 
+    <button class="menu__toggle--first btn js-open-menu" aria-expanded="false" aria-controls="mobile__menu">
+      <svg class="menu__svg btn" width="32" height="32" fill="currentColor" 
         xmlns="http://www.w3.org/2000/svg">
         <use href="./images/icon-project.svg#icon-menu">
         </use>
       </svg>
     </button>
 
-    <button type="button" class="header__button js-open-modal"  data-modal="1">Buy now<svg class="button__svg" width="12"
+    <button type="button" class="header__button btn js-open-modal"  data-modal="1">Buy now<svg class="button__svg btn" width="12"
         height="12">
         <use href="./images/icon-project.svg#icon-arrow-btn"></use>
       </svg>
@@ -35,19 +35,19 @@
       src="./images/header/logo_40.png"
       sizes="(min-width:1200px) 60px, (min-width:768px) 48px, (max-width:767px) 40px, 100vw" alt="логотип морозиво">
 
-    <button class="menu__toggle js-close-menu">
-      <svg class="menu__svg" width="32" height="32">
+    <button class="menu__toggle btn js-close-menu">
+      <svg class="menu__svg btn" width="32" height="32">
         <use href="./images/icon-project.svg#icon-close-line"></use>
       </svg>
     </button>
     <div class="mobi">
       <ul class="mobile__menu">
-        <li class="header__item"><a class="mobi__list" href="#home">Home</a></li>
-        <li class="header__item"><a class="mobi__list" href="#about">How it’s made?</a></li>
-        <li class="header__item"><a class="mobi__list" href="#products">Our products</a></li>
-        <li class="header__item"><a class="mobi__list" href="#contacts">Contact</a></li>
+        <li class="header__item"><a class="mobi__list js-close-menu" href="#home">Home</a></li>
+        <li class="header__item"><a class="mobi__list js-close-menu" href="#about">How it’s made?</a></li>
+        <li class="header__item"><a class="mobi__list js-close-menu" href="#products">Our products</a></li>
+        <li class="header__item"><a class="mobi__list js-close-menu" href="#contacts">Contact</a></li>
       </ul>
-      <button type="button" class="menu__button js-open-modal" data-modal="1">Buy now<svg class="menu__btn__svg" width="12" height="12">
+      <button type="button" class="menu__button btn js-open-modal" data-modal="1">Buy now<svg class="menu__btn__svg btn" width="12" height="12">
           <use href="./images/icon-project.svg#icon-arrow-btn"></use>
         </svg></button>
     </div>

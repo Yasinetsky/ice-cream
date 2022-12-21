@@ -230,6 +230,28 @@
   }
 }
 
+.about__description {
+  @include mq(tablet) {
+    display: flex;
+    margin: 0;
+    max-width: 100%;
+  }
+  @include mq(desktop) {
+    align-items: center;
+  }
+}
+
+.about__description-items {
+  @include mq(tablet) {
+    width: 330px;
+  }
+  @include mq(desktop) {
+    width: 463px;
+  }
+}
+
+// about btn
+
 .about_button {
   margin: 0 auto;
   background-color: #f8d24e;
@@ -276,24 +298,4 @@
     fill: #ffffff;
   }
   transition: fill 0.5s ease-in-out;
-}
-
-.about__description {
-  @include mq(tablet) {
-    display: flex;
-    margin: 0;
-    max-width: 100%;
-  }
-  @include mq(desktop) {
-    align-items: center;
-  }
-}
-
-.about__description-items {
-  @include mq(tablet) {
-    width: 330px;
-  }
-  @include mq(desktop) {
-    width: 463px;
-  }
 }
