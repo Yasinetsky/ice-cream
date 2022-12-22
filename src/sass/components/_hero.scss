@@ -197,9 +197,9 @@
 
 .plate-image,
 .plate-image__text,
-.plate-image__description,
 .hero__icon-arrow,
-#foo {
+.show,
+.button-more-info {
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -211,7 +211,9 @@
   left: 32px;
   top: 185px;
 
-  transition: transform 0.25s ease-in-out;
+  animation-name: Appearance;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
 
   @media screen and (min-width: 1200px) {
     position: absolute;
@@ -222,9 +224,20 @@
 
 .button-more-info {
   width: 40px;
-  height: 16px;
+  height: 18px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  position: absolute;
+  top: 310px;
+  left: 214px;
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 470px;
+    left: 256px;
+  }
 }
 
 .button-more-info .hero__icon-arrow {
@@ -244,8 +257,6 @@
   line-height: calc(17 / 12);
   color: $primary-color;
 
-  transition: opacity 0.25s ease-in-out;
-
   @media screen and (min-width: 1200px) {
     margin-left: 241px;
     width: 200px;
@@ -256,32 +267,25 @@
 }
 
 .show {
-  display: block;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .hero__icon-arrow {
-  position: absolute;
-  top: 312px;
-  left: 32px;
-  margin-left: 184px;
-  display: inline-flex;
-  justify-content: center;
+  margin-left: -8px;
+  margin-top: -4px;
 
   fill: $primary-color;
 
   transition: fill 0.25s ease-in-out;
-
-  @media screen and (min-width: 1200px) {
-    position: absolute;
-    left: 74px;
-    top: 475px;
-  }
 }
+
 #foo {
   transition: transform 0.25s ease-in-out;
 }
 
-.hero__icon-arrow.rotate {
+.rotate {
   transform: rotate(180deg);
 }
 
@@ -290,9 +294,7 @@
   top: 236px;
   left: 135px;
 
-  transition: transform 0.25s ease-in-out;
-
-  @media screen and (min-width: 767px) {
+   @media screen and (min-width: 767px) {
     left: 408px;
     top: 20px;
   }
@@ -300,5 +302,49 @@
   @media screen and (min-width: 1200px) {
     top: 31px;
     left: 652px;
+  }
+
+    animation-name: Appearance;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
+}
+
+@-webkit-keyframes Appearance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes Appearance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes Appearance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes Appearance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
