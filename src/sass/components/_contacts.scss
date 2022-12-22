@@ -254,10 +254,11 @@
         border-color: transparent;
         color: #131313;
         cursor: pointer;
+        transition: all 500ms ease-in-out;
 
         &:hover{
             background-color: $hov-foc;
-            color: #000000;;
+            color: #000000;
         }
 
         &:focus{
@@ -280,6 +281,7 @@
         border-radius: 10px;
         color: #000000;
         cursor: pointer;
+        transition: all 500ms ease-in-out;
 
         &:hover{            
             border: 2px solid $hov-foc;
