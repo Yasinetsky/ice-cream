@@ -13,6 +13,10 @@
   }
 }
 
+.gallery__title{
+ display: none;
+}
+
 .gallery__item {
   display: flex;
   flex-direction: column;
