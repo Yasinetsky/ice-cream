@@ -130,6 +130,9 @@
         (min-resolution: 2dppx) {
         background-image: url(../images/about/img_tab@660.png);
       }
+      .about__description:hover & {
+        transform: translateY(0px);
+      }
     }
     @include mq(desktop) {
       width: 490px;
