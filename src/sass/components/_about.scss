@@ -100,14 +100,15 @@
   }
 
   &::before {
+    content: '';
     width: 279px;
     height: 278px;
     position: absolute;
     top: 0;
     left: 0;
     transform: translateY(22px);
-    content: '';
 
+    transition: transform 0.5s ease-in-out;
     margin-bottom: 40px;
     background-image: url(../images/about/img_mob@279.png);
     background-repeat: no-repeat;
@@ -140,6 +141,9 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: url(../images/about/img_desk@980.png);
+      }
+      .about__description:hover & {
+        transform: translateY(0px);
       }
     }
   }
